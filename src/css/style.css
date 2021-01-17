@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+.fs-primary {
+  color: #fff;
+  font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-h1-dt {
+  color: #fff;
+  font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-h2-dt {
+  color: #fff;
+  font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-h3-dt {
+  color: #fff;
+  font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
+}
+
+.fs-h3-dt-cap {
+  color: #fff;
+  font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
+  text-transform: capitalize;
+}
+
+.fs-h3-dt-bold {
+  color: #fff;
+  font: normal 700 24px/1.875 "Roboto-Bold", "sans-serif";
+  text-transform: capitalize;
+}
+
+.fs-h4-dt {
+  color: #fff;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-h4-dt-cap {
+  color: #fff;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  text-transform: capitalize;
+}
+
+.fs-h1-mb {
+  color: #fff;
+  font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-h2-mb {
+  color: #fff;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-h3-mb {
+  color: #fff;
+  font: normal 700 16px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-h4-mb {
+  color: #fff;
+  font: normal 700 18px/1.33 "Roboto-Bold", "sans-serif";
+}
+
+.fs-txt-64 {
+  color: #fff;
+  font: normal 400 64px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-56 {
+  color: #fff;
+  font: normal 400 56px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-48 {
+  color: #fff;
+  font: normal 400 48px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-40 {
+  color: #fff;
+  font: normal 400 40px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-32 {
+  color: #fff;
+  font: normal 400 32px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-30 {
+  color: #fff;
+  font: normal 400 30px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-24 {
+  color: #fff;
+  font: normal 400 24px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-12 {
+  color: #fff;
+  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+}
+
+.fs-txt-12-bold {
+  color: #fff;
+  font: normal 700 12.8px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+/*# sourceMappingURL=style.css.map */

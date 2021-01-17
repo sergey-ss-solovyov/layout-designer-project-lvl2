@@ -1,0 +1,30 @@
+/// ------ Fonts ------
+$regular-font: ('Roboto-Regular', 'sans-serif');
+$bold-font: ('Roboto-Bold', 'sans-serif');
+
+$primary-text-color: get-color();
+$secondary-text-color: get-color('gray');
+
+/// ------ Colors ------
+$colors: (
+  'primary': #fff,
+  'black': #08020d,
+  'dark': #3c3b3d,
+  'dark-gray': #cacaca,
+  'gray': #e0e0e0,
+  'purple': #5328a1,
+  'red': #95390c,
+  'green': #34c176,
+  'orange': #f89202,
+);
+
+/// ------ Breakpoints ------
+  $breakpoints: (
+    'xx-small': 320px,
+    'x-small': 375px,
+    'small': 425px,
+    'medium': 768px,
+    'large': 1024px,
+    'x-large': 1280px,
+    'xx-large': 1440px,
+  );
