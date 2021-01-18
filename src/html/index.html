@@ -6,40 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Box Home Page</title>
 
-    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
     <link rel="stylesheet" href="../css/style.css">
   </head>
-  <body>
+  <body class="fs-primary">
     <!-- HEADER -->
-      <header id="page-description">
-        <div class="grid">
-          <div>
-            <img src="../images/logo.svg" alt="music box logo">
-            <p>music box</p>
+      <header>
+        <div class="container flex-wrap dir-col fs-txt-11 upper">
+          <div class="flex-wrap y-center">
+            <img class="main-logo mr-16" src="../images/logo.svg" alt="music box logo">
+            <span>music box</span>
           </div>
           <nav>
-            <ul>
-              <li><a href=""></a>главная</li>
-              <li><a href=""></a>каталог</li>
-              <li><a href=""></a>исполнители</li>
-              <li><a href=""></a>контакты</li>
+            <ul class="flex-wrap dir-col">
+              <li><a href="">главная</a></li>
+              <li><a href="">каталог</a></li>
+              <li><a href="">исполнители</a></li>
+              <li><a href="">контакты</a></li>
             </ul>
           </nav>
           <input type="text" placeholder="ПОИСК...">
         </div>
       </header>
     <!-- BANNER -->
-      <section id ="page-description">
-        <div>
-          <h1>Онлайн музыка где угодно</h1>
-          <h2>без ограничений</h2>
+      <section id ="page-description" class="bg-banner">
+        <div class="container">
+          <h1 class="fs-h1-mb upper">Онлайн музыка где угодно</h1>
+          <h2 class="fs-h2-mb upper">без ограничений</h2>
           <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-        </div>
-        <div class="grid">
           <form action="">
-            <input type="text" placeholder="имя">
-            <input type="email" placeholder="email">
-            <button type="submit" placeholder="получить доступ"></button>
+            <div class="grid">
+              <input type="text" class="form-control" placeholder="Имя">
+              <input type="email" class="form-control" placeholder="Email">
+              <button type="submit" class="btn access-btn upper">получить доступ</button>
+            </div>
           </form>
         </div>
       </section>

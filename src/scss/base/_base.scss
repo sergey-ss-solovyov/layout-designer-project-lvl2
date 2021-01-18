@@ -1,13 +1,53 @@
-html {
+@import "../abstracts/mixins";
+
+body,
+input {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
 a {
   text-decoration: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.y-center {
+  align-items: center;
+}
+
+/// ------ margins ------
+.mr-16 {
+  margin-right: 16px;
 }

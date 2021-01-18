@@ -1,20 +1,7 @@
-@import './_variables.scss';
+@import "./functions";
+@import "./_variables.scss";
 
-// @mixin get-font-styles($size, $weight: 400, $height: 1.5, $color: $primary-text-color) {
-//   color: $color;
-//   font-style: normal;
-//   font-weight: $weight;
-//   font-size: $size;
-//   line-height: $height;
-//   font-family: $regular-font;
-  
-//   @if ($weight == 700) {
-//     font-family: $bold-font;
-//   }
-// }
-
-@mixin get-font-styles($size, $weight: 400, $height: 1.5, $color: $primary-text-color) {
-  color: $color;
+@mixin get-font-styles($size, $weight: 400, $height: 1.5, $color: get-color()) {
   @if ($weight == 400) {
     font: normal $weight #{$size}/#{$height} $regular-font;
   } @else {

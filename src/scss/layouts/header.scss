@@ -1,0 +1,50 @@
+@import "../abstracts/functions";
+
+header {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
+
+  .container {
+    margin: 0 20px;
+    font-stretch: condensed;
+  }
+
+  nav {
+    margin-bottom: 18px;
+  }
+  
+  ul {
+    flex-direction: column;
+    margin: 17px 0 0 0;
+    
+    li + li {
+      margin-top: 3px;
+    }
+  }
+  
+  a {
+    color: get-color();
+  }
+
+  input {
+    width: 374px;
+    height: 25px;
+    padding: 0 0 0 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: get-color("dark");
+  }
+}
+
+.bg-banner {
+  background-image: url("../../src/images/banner.png");
+  background-size: auto;
+  background-position-x: center;
+}
+
+.main-logo {
+  width: 24px;
+  height: 24px;
+}

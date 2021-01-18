@@ -1,0 +1,17 @@
+@import "../abstracts/functions";
+@import "../abstracts/mixins";
+
+.btn {
+  text-align: center;
+  font-stretch: condensed;
+}
+
+.access-btn {
+  width: 374px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: get-color("green");
+  color: get-color();
+  @include get-font-styles(13.3px, 400, 1.15);
+}

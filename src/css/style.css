@@ -1,15 +1,45 @@
-html {
+body,
+input {
   box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.mr-16 {
+  margin-right: 16px;
 }
 
 @font-face {
@@ -26,106 +56,186 @@ a {
 }
 
 .fs-h1-dt {
-  color: #fff;
   font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
 }
 
 .fs-h2-dt {
-  color: #fff;
   font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
 }
 
 .fs-h3-dt {
-  color: #fff;
   font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
 }
 
 .fs-h3-dt-cap {
-  color: #fff;
   font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
   text-transform: capitalize;
 }
 
 .fs-h3-dt-bold {
-  color: #fff;
   font: normal 700 24px/1.875 "Roboto-Bold", "sans-serif";
   text-transform: capitalize;
 }
 
 .fs-h4-dt {
-  color: #fff;
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
 }
 
 .fs-h4-dt-cap {
-  color: #fff;
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   text-transform: capitalize;
 }
 
 .fs-h1-mb {
-  color: #fff;
   font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
 }
 
 .fs-h2-mb {
-  color: #fff;
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
 }
 
 .fs-h3-mb {
-  color: #fff;
   font: normal 700 16px/1.5 "Roboto-Bold", "sans-serif";
 }
 
 .fs-h4-mb {
-  color: #fff;
   font: normal 700 18px/1.33 "Roboto-Bold", "sans-serif";
 }
 
 .fs-txt-64 {
-  color: #fff;
   font: normal 400 64px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-56 {
-  color: #fff;
   font: normal 400 56px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-48 {
-  color: #fff;
   font: normal 400 48px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-40 {
-  color: #fff;
   font: normal 400 40px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-32 {
-  color: #fff;
   font: normal 400 32px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-30 {
-  color: #fff;
   font: normal 400 30px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-24 {
-  color: #fff;
   font: normal 400 24px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-12 {
-  color: #fff;
   font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
 }
 
 .fs-txt-12-bold {
-  color: #fff;
   font: normal 700 12.8px/1.5 "Roboto-Bold", "sans-serif";
+}
+
+.fs-txt-11 {
+  font: normal 700 11px/1.15 "Roboto-Bold", "sans-serif";
+}
+
+.btn {
+  text-align: center;
+  font-stretch: condensed;
+}
+
+.access-btn {
+  width: 374px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #34c176;
+  color: #fff;
+  font: normal 400 13.3px/1.15 "Roboto-Regular", "sans-serif";
+}
+
+header {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
+}
+header .container {
+  margin: 0 20px;
+  font-stretch: condensed;
+}
+header nav {
+  margin-bottom: 18px;
+}
+header ul {
+  flex-direction: column;
+  margin: 17px 0 0 0;
+}
+header ul li + li {
+  margin-top: 3px;
+}
+header a {
+  color: #fff;
+}
+header input {
+  width: 374px;
+  height: 25px;
+  padding: 0 0 0 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3c3b3d;
+}
+
+.bg-banner {
+  background-image: url("../../src/images/banner.png");
+  background-size: auto;
+  background-position-x: center;
+}
+
+.main-logo {
+  width: 24px;
+  height: 24px;
+}
+
+#page-description {
+  padding: 250px 0 210px 0;
+}
+#page-description .container {
+  margin: 0 20px;
+}
+#page-description .container h1,
+#page-description .container h2,
+#page-description .container p {
+  margin: 0;
+  text-align: center;
+  font-stretch: condensed;
+}
+#page-description .container h2,
+#page-description .container p {
+  margin-bottom: 16px;
+}
+#page-description .grid {
+  display: grid;
+  grid-template-rows: repeat(2, 50px) 57px;
+  gap: 24px;
+}
+#page-description .grid .form-control {
+  width: 374px;
+  margin: 0 auto;
+  padding-left: 22px;
+  background-color: transparent;
+  border: solid 2px #cacaca;
+  border-radius: 3px;
+  color: #fff;
+}
+#page-description .grid .form-control::-moz-placeholder {
+  color: #fff;
+}
+#page-description .grid .form-control::-webkit-input-placeholder {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
