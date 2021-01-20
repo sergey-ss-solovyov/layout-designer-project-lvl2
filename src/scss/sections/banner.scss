@@ -1,7 +1,8 @@
 @import "../abstracts/functions";
 
 #page-description {
-  padding: 250px 0 210px 0;
+  padding: 250px 0 0 0;
+  height: 603px;
 
   .container {
     margin: 0 20px;
@@ -18,7 +19,16 @@
     p {
       margin-bottom: 16px;
     }
+
+    h1 {
+      @include get-font-styles(30px, 700);
+    }
+
+    h2 {
+      @include get-font-styles(18px, 700);
+    }
   }
+  
 
   .grid {
     display: grid;
@@ -26,8 +36,7 @@
     gap: 24px;
 
     .form-control {
-      // box-sizing: border-box;
-      width: 374px;
+      width: 100%;
       margin: 0 auto;
       padding-left: 22px;
       background-color: transparent;
@@ -42,6 +51,85 @@
       &::-webkit-input-placeholder {
         color: get-color();
       }
+    }
+  }
+} 
+
+/// ------ media ------
+@media (min-width: 375px) {
+  #page-description {
+    .grid {
+      .form-control {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) {
+  #page-description {
+    .grid {
+      .form-control {
+        width: 100%;
+        max-width: 374px;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  #page-description {
+    padding: 200px 0 0 0;
+    height: 501px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto repeat(2, 273px) auto;
+      grid-template-rows: 50px 57px;
+      gap: 24px;
+
+      .ctrl-1 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / 1;
+      }
+      .ctrl-2 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 807px) {
+  #page-description {
+    padding: 200px 0 50px 0;
+
+    .container {
+      h1 {
+        @include get-font-styles(60px, 700);
+      }
+  
+      h2 {
+        margin-bottom: 32px;
+        @include get-font-styles(38px, 700);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #page-description {
+    .container {
+      margin: 0 100px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
     }
   }
 }

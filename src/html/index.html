@@ -12,33 +12,35 @@
   <body class="fs-primary">
     <!-- HEADER -->
       <header>
-        <div class="container flex-wrap dir-col fs-txt-11 upper">
-          <div class="flex-wrap y-center">
-            <img class="main-logo mr-16" src="../images/logo.svg" alt="music box logo">
-            <span>music box</span>
+        <div class="container fs-txt-11 upper">
+          <div class="grid">
+            <div class="control-1 y-center">
+              <img class="main-logo mt-1 mr-16" src="../images/logo.svg" alt="music box logo">
+              <span>music box</span>
+            </div>
+            <nav class="control-2">
+              <ul>
+                <li><a href="">главная</a></li>
+                <li><a href="">каталог</a></li>
+                <li><a href="">исполнители</a></li>
+                <li><a href="">контакты</a></li>
+              </ul>
+            </nav>
+            <input type="text" class="control-3" placeholder="ПОИСК...">
           </div>
-          <nav>
-            <ul class="flex-wrap dir-col">
-              <li><a href="">главная</a></li>
-              <li><a href="">каталог</a></li>
-              <li><a href="">исполнители</a></li>
-              <li><a href="">контакты</a></li>
-            </ul>
-          </nav>
-          <input type="text" placeholder="ПОИСК...">
         </div>
       </header>
     <!-- BANNER -->
       <section id ="page-description" class="bg-banner">
         <div class="container">
-          <h1 class="fs-h1-mb upper">Онлайн музыка где угодно</h1>
-          <h2 class="fs-h2-mb upper">без ограничений</h2>
+          <h1 class="upper">Онлайн музыка где угодно</h1>
+          <h2 class="upper">без ограничений</h2>
           <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
           <form action="">
             <div class="grid">
-              <input type="text" class="form-control" placeholder="Имя">
-              <input type="email" class="form-control" placeholder="Email">
-              <button type="submit" class="btn access-btn upper">получить доступ</button>
+                <input type="text" class="form-control ctrl-1" placeholder="Имя">
+                <input type="email" class="form-control ctrl-2" placeholder="Email">
+                <button type="submit" class="btn access-btn upper">получить доступ</button>
             </div>
           </form>
         </div>

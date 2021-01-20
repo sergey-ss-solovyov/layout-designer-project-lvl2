@@ -1,17 +1,12 @@
 @import "../abstracts/mixins";
 
 body,
+ul,
 input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
 
 a {
   text-decoration: none;
@@ -28,12 +23,8 @@ a {
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
 }
 
-.dir-col {
-  flex-direction: column;
-}
 
 ul {
   padding: 0;
@@ -50,4 +41,8 @@ li {
 /// ------ margins ------
 .mr-16 {
   margin-right: 16px;
+}
+
+.mt-1 {
+  margin-top: 1px;
 }

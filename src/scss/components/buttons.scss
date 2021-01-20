@@ -7,11 +7,33 @@
 }
 
 .access-btn {
-  width: 374px;
+  width: 100%;
   margin: 0 auto;
   border: none;
   border-radius: 5px;
   background-color: get-color("green");
   color: get-color();
   @include get-font-styles(13.3px, 400, 1.15);
+}
+
+@media (min-width: 375px) {
+  .access-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 414px) {
+  .access-btn {
+    width: 100%;
+    max-width: 374px;
+  }
+}
+
+@media (min-width: 650px) {
+  .access-btn {
+    max-width: 570px;
+    margin: 0;
+    grid-column: 2 / span 2;
+    grid-row: 2 / 2;
+  }
 }
