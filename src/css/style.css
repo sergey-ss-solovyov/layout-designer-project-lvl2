@@ -1,13 +1,22 @@
 body,
 ul,
-input {
+input,
+p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.bg-black {
+  background-color: #08020d;
+}
+
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 20px;
 }
 
 .upper {
@@ -145,7 +154,6 @@ li {
 
 .btn {
   text-align: center;
-  font-stretch: condensed;
 }
 
 .access-btn {
@@ -156,6 +164,18 @@ li {
   background-color: #34c176;
   color: #fff;
   font: normal 400 13.3px/1.15 "Roboto-Regular", "sans-serif";
+  font-stretch: condensed;
+}
+
+.checkout-btn {
+  width: 100%;
+  height: 66px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
+  font-stretch: condensed;
 }
 
 @media (min-width: 375px) {
@@ -184,7 +204,7 @@ header {
   right: 0;
 }
 header .container {
-  margin: 0 20px;
+  font: normal 700 11px/1.15 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
 header .grid {
@@ -219,12 +239,6 @@ header input {
   border: none;
   border-radius: 50px;
   background-color: #3c3b3d;
-}
-
-.bg-banner {
-  background-image: url("../../src/images/banner.png");
-  background-size: auto;
-  background-position-x: center;
 }
 
 .main-logo {
@@ -305,15 +319,16 @@ header input {
   padding: 250px 0 0 0;
   height: 603px;
 }
-#page-description .container {
-  margin: 0 20px;
+#page-description.bg-banner {
+  background-image: url("../../src/images/banner.png");
+  background-size: auto;
+  background-position-x: center;
 }
 #page-description .container h1,
 #page-description .container h2,
 #page-description .container p {
   margin: 0;
   text-align: center;
-  font-stretch: condensed;
 }
 #page-description .container h2,
 #page-description .container p {
@@ -321,9 +336,11 @@ header input {
 }
 #page-description .container h1 {
   font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
 }
 #page-description .container h2 {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
 }
 #page-description .grid {
   display: grid;
@@ -399,6 +416,70 @@ header input {
     max-width: 1240px;
     margin: 0 auto;
   }
+}
+#page-pricing {
+  padding: 100px 0;
+}
+#page-pricing h2 {
+  margin-bottom: 46px;
+  text-align: center;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+#page-pricing .common-terms {
+  margin-top: 40px;
+  text-align: center;
+  font-stretch: condensed;
+}
+#page-pricing .grid {
+  display: grid;
+  grid-template-rows: repeat(3, 621px);
+  gap: 27px;
+}
+#page-pricing .grid .card {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+}
+#page-pricing .grid .card h3 {
+  margin: 18px 0 184px 0;
+  font: normal 700 16px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+#page-pricing .grid .card .price {
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+#page-pricing .grid .card .price .amount {
+  margin-right: 16px;
+  font: normal 400 64px/1.5 "Roboto-Regular", "sans-serif";
+}
+#page-pricing .grid .card .price span {
+  margin-top: 12px;
+  font: normal 400 32px/1.5 "Roboto-Regular", "sans-serif";
+}
+#page-pricing .grid .card .btn-container {
+  margin-bottom: 64px;
+  padding: 0 24px;
+}
+#page-pricing .grid .card .terms {
+  padding: 0 24px;
+  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+  font-stretch: condensed;
+}
+#page-pricing .grid .card-1 {
+  grid-row: 1/span 1;
+  background-image: url(../images/subscribe_1.png);
+}
+#page-pricing .grid .card-2 {
+  grid-row: 2/span 1;
+  background-image: url(../images/subscribe_2.png);
+}
+#page-pricing .grid .card-3 {
+  grid-row: 3/span 1;
+  background-image: url(../images/subscribe_3.png);
 }
 
 /*# sourceMappingURL=style.css.map */

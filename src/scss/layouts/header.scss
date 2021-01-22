@@ -7,7 +7,7 @@ header {
   right: 0;
 
   .container {
-    margin: 0 20px;
+    @include get-font-styles(11px, 700, 1.15);
     font-stretch: condensed;
   }
 
@@ -53,12 +53,6 @@ header {
     border-radius: 50px;
     background-color: get-color("dark");
   }
-}
-
-.bg-banner {
-  background-image: url("../../src/images/banner.png");
-  background-size: auto;
-  background-position-x: center;
 }
 
 .main-logo {

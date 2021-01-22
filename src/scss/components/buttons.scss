@@ -3,7 +3,7 @@
 
 .btn {
   text-align: center;
-  font-stretch: condensed;
+  // font-stretch: condensed;
 }
 
 .access-btn {
@@ -14,6 +14,18 @@
   background-color: get-color("green");
   color: get-color();
   @include get-font-styles(13.3px, 400, 1.15);
+  font-stretch: condensed;
+}
+
+.checkout-btn {
+  width: 100%;
+  height: 66px;
+  border: 1px solid get-color();
+  border-radius: 5px;
+  background-color: transparent;
+  color: get-color();
+  @include get-font-styles(16px);
+  font-stretch: condensed;
 }
 
 @media (min-width: 375px) {

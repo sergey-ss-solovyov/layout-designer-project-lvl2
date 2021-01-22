@@ -12,7 +12,7 @@
   <body class="fs-primary">
     <!-- HEADER -->
       <header>
-        <div class="container fs-txt-11 upper">
+        <div class="container upper">
           <div class="grid">
             <div class="control-1 y-center">
               <img class="main-logo mt-1 mr-16" src="../images/logo.svg" alt="music box logo">
@@ -47,53 +47,59 @@
       </section>
 
     <!-- MAIN -->
-    <main>
+    <main class="bg-black">
       <div class="container">
         <!-- SUBSCRIPTION -->
         <section id="page-pricing">
+          <h2 class="upper">формы подписки</h2>
           <div class="grid">
-            <h2>формы подписки</h2>
-            <div class="cards">
-              <div class="card">
-                <h3>бесплатная</h3>
+            <!-- <div class="cards"> -->
+              <div class="card card-1">
+                <h3 class="upper">бесплатная</h3>
                 <div class="price">
-                  <p>0</p>
-                  <span>руб.</span>
+                  <p class="amount">0</p>
+                  <span class="upper">руб.</span>
                 </div>
-                <button type="submit">оформить</button>
-                <p>Оплата в месяц. Бесплатный тариф предоставляет
+                <div class="btn-container">
+                  <button type="submit" class="btn checkout-btn upper">оформить</button>
+                </div>  
+                <p class="terms">Оплата в месяц. Бесплатный тариф предоставляет
                   доступ ко всей коллекции музыки. Присутствует реклама
                 </p>
               </div>
-              <div class="card">
-                <h3>стандартная</h3>
+              <div class="card card-2">
+                <h3 class="upper">стандартная</h3>
                 <div class="price">
-                  <p>250</p>
-                  <span>руб.</span>
+                  <p class="amount">250</p>
+                  <span class="upper">руб.</span>
                 </div>
-                <button type="submit">оформить</button>
-                <p>Оплата в месяц. Стандартный тариф предоставляет
+                <div class="btn-container">
+                  <button type="submit" class="btn checkout-btn upper">оформить</button>
+                </div>
+                <p class="terms">Оплата в месяц. Стандартный тариф предоставляет
                    доступ ко всей коллекции музыки в среднем качестве
                 </p>
               </div>
-              <div class="card">
-                <h3>премиум</h3>
+              <div class="card card-3">
+                <h3 class="upper">премиум</h3>
                 <div class="price">
-                  <p>500</p>
-                  <span>руб.</span>
+                  <p class="amount">500</p>
+                  <span class="upper">руб.</span>
                 </div>
-                <button type="submit">оформить</button>
-                <p>Оплата в месяц. Премиум тариф предоставляет
+                <div class="btn-container">
+                  <button type="submit" class="btn checkout-btn   upper">оформить</button>
+                </div>
+                <p class="terms">Оплата в месяц. Премиум тариф предоставляет
                    доступ ко всей коллекции музыки в высоком качестве
                 </p>
               </div>
-            </div>
-            <p>На всех тарифах возможно прослушивание музыки с
-               мобильных устройств. На премиум тарифе вы можете
-               скачать все композиции на ваше устройство и слушать
-               музыку без подключения к интернету
-            </p>
+            <!-- </div> -->
           </div>
+          <p class="common-terms">На всех тарифах возможно прослушивание музыки с
+             мобильных устройств. На премиум тарифе вы можете
+             скачать все композиции на ваше устройство и слушать
+             музыку без подключения к интернету
+          </p>
           
         </section>
 

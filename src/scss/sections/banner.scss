@@ -4,15 +4,20 @@
   padding: 250px 0 0 0;
   height: 603px;
 
+  &.bg-banner {
+    background-image: url("../../src/images/banner.png");
+    background-size: auto;
+    background-position-x: center;
+  }
+
   .container {
-    margin: 0 20px;
+    // margin: 0 20px;
 
     h1,
     h2,
     p {
       margin: 0;
       text-align: center;
-      font-stretch: condensed;
     }
 
     h2,
@@ -22,10 +27,12 @@
 
     h1 {
       @include get-font-styles(30px, 700);
+      font-stretch: condensed;
     }
 
     h2 {
       @include get-font-styles(18px, 700);
+      font-stretch: condensed;
     }
   }
   

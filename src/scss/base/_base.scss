@@ -1,15 +1,25 @@
 @import "../abstracts/mixins";
+@import "../abstracts/functions";
 
 body,
 ul,
-input {
+input,
+p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.bg-black {
+  background-color: get-color("black");
+}
+
 a {
   text-decoration: none;
+}
+
+.container {
+  margin: 0 20px;
 }
 
 .upper {

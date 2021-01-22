@@ -1,0 +1,84 @@
+@import "../abstracts/functions";
+
+#page-pricing {
+  padding: 100px 0;
+
+  h2 {
+    margin-bottom: 46px;
+    text-align: center;
+    
+    @include get-font-styles(18px, 700);
+    font-stretch: condensed;
+  }
+
+  .common-terms {
+    margin-top: 40px;
+    text-align: center;
+    font-stretch: condensed;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(3, 621px);
+    gap: 27px;
+
+    .card {
+      max-width: 375px;
+      margin: 0 auto;
+      text-align: center;
+      background-size: cover;
+
+      h3 {
+        margin: 18px 0 184px 0;
+
+        @include get-font-styles(16px, 700);
+        font-stretch: condensed;
+      }
+      
+      .price {
+        display: flex;
+        margin-bottom: 24px;
+        justify-content: center;
+
+        .amount {
+          margin-right: 16px;
+          
+          @include get-font-styles(64px);
+        }
+
+        span {
+          margin-top: 12px;
+          
+          @include get-font-styles(32px);
+        }
+      }
+      
+      .btn-container {
+        margin-bottom: 64px;
+        padding: 0 24px;
+      }
+
+      .terms {
+        padding: 0 24px;
+
+        @include get-font-styles(12.8px);
+        font-stretch: condensed;
+      }
+    }
+
+    .card-1 {
+      grid-row: 1 / span 1;
+      background-image: url(../images/subscribe_1.png);
+    }
+
+    .card-2 {
+      grid-row: 2 / span 1;
+      background-image: url(../images/subscribe_2.png);
+    }
+
+    .card-3 {
+      grid-row: 3 / span 1;
+      background-image: url(../images/subscribe_3.png);
+    }
+  }
+}
