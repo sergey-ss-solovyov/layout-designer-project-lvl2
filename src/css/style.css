@@ -1,7 +1,8 @@
 body,
 ul,
 input,
-p {
+p,
+figure {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,6 +28,10 @@ a {
   text-transform: capitalize;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +47,10 @@ li {
 
 .y-center {
   align-items: center;
+}
+
+.orange {
+  color: #f89202;
 }
 
 .mr-16 {
@@ -175,6 +184,20 @@ li {
   background-color: transparent;
   color: #fff;
   font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
+  font-stretch: condensed;
+}
+
+.album-btn {
+  width: 135px;
+  height: 53px;
+  margin-bottom: 16px;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.album-btn a {
+  color: #cacaca;
+  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
   font-stretch: condensed;
 }
 
@@ -418,7 +441,7 @@ header input {
   }
 }
 #page-pricing {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 #page-pricing h2 {
   margin-bottom: 46px;
@@ -537,6 +560,64 @@ header input {
     margin-right: auto;
     margin-left: auto;
   }
+}
+#page-news {
+  padding: 100px 0 0 0;
+}
+#page-news h2 {
+  margin-bottom: 48px;
+  text-align: center;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+#page-news .grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+#page-news .grid .pic-1 {
+  grid-row: 1/span 1;
+}
+#page-news .grid .pic-1 img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 374px;
+}
+#page-news .grid .pic-2 {
+  grid-row: 3/span 1;
+}
+#page-news .grid .pic-2 img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 374px;
+}
+#page-news .grid .news-card-1 {
+  grid-row: 2/span 1;
+  max-width: 374px;
+  margin: 0 auto;
+}
+#page-news .grid .news-card-2 {
+  grid-row: 4/span 1;
+  max-width: 374px;
+  margin: 0 auto;
+}
+#page-news .grid .flex {
+  margin-bottom: 48px;
+}
+#page-news .grid .flex p {
+  margin-left: 16px;
+}
+#page-news .grid .description {
+  margin-bottom: 23px;
+  color: #cacaca;
+}
+#page-news .grid .album-title {
+  margin-bottom: 16px;
+}
+#page-news .grid .music-box-avatar {
+  height: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */
