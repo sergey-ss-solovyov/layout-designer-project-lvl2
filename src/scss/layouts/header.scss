@@ -136,21 +136,3 @@ header {
     }
   }
 }
-
-@media (min-width: 1024px) {
-  header {
-    .container {
-      // max-width: 1440px;
-      margin: 0 100px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  header {
-    .container {
-      max-width: 1240px;
-      margin: 0 auto;
-    }
-  }
-}

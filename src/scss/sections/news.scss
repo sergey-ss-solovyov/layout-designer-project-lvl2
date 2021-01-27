@@ -14,62 +14,123 @@
 
   .grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 48px;
+    grid-template-areas: "singer-1" "singer-2";
+    gap: 64px;
 
-    .pic-1 {
-      grid-row: 1 / span 1;
+    .singer-1 {
+      grid-area: "singer-1";
+    }
 
+    .singer-2 {
+      grid-area: "singer-2";
+    }
+    
+    .singer {
       img {
         display: block;
         margin: auto;
         width: 100%;
         max-width: 374px;
       }
-    }
-
-    .pic-2 {
-      grid-row: 3 / span 1;
-      
-      img {
-        display: block;
-        margin: auto;
-        width: 100%;
+      .news-card {
         max-width: 374px;
+        margin: 0 auto;  
+
+        .album-title {
+          margin-top: 50px;
+          margin-bottom: 16px;
+        }
+
+        .description {
+          margin-bottom: 23px;
+          color: get-color('dark-gray');
+        }
+
+        .flex {
+          margin-bottom: 48px;
+
+          .music-box-avatar {
+            height: 19px;
+            width: 19px;
+            margin: 0;
+          }
+
+          p {
+            margin-left: 16px;
+          }
+        }
       }
     }
+  }
+}
 
-    .news-card-1 {
-      grid-row: 2 / span 1;
-      max-width: 374px;
-      margin: 0 auto;  
+@media (min-width: 843px) {
+  #page-news {
+  
+    h2 {
+      @include get-font-styles(38px, 700);
+      font-stretch: condensed;
     }
 
-    .news-card-2 {
-      grid-row: 4 / span 1;
-      max-width: 374px;
-      margin: 0 auto;
-    }
+    .grid {
+      .singer {
+        img {
+          max-width: 575px;
+        }
+        .news-card {
+          max-width: 575px;
 
-    .flex {
-      margin-bottom: 48px;
+          .album-title {
+            @include get-font-styles(30px);
+          }
+        }
+      }
     }
+  }
+}
 
-    .flex p {
-      margin-left: 16px;
-    }
+@media (min-width: 1440px) {
+  #page-news {
+    .grid {
+      display: grid;
+      grid-template-areas: "singer-1" "singer-2";
+      row-gap: 65px;
 
-    .description {
-      margin-bottom: 23px;
-      color: get-color('dark-gray');
-    }
+      .singer {
+        display: flex;
+  
+        &.singer-1 {
+          grid-area: "singer-1";
 
-    .album-title {
-      margin-bottom: 16px;
-    }
+          .news-card {
+            margin-left: 50px;
 
-    .music-box-avatar {
-      height: 19px;
+            .album-title {
+              margin: 0 0 30px 0;
+            }
+          }
+        }
+  
+        &.singer-2 {
+          grid-area: "singer-2";
+
+          .news-card {
+            margin-right: 50px;
+
+            .album-title {
+              margin: 0 0 30px 0;
+            }
+          }
+          .pic-2 {
+            order: 2;
+          }
+  
+          .news-card-2 {
+            order: 1;
+          }
+        }
+
+      }
     }
   }
 }
