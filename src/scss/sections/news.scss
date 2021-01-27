@@ -8,8 +8,7 @@
     margin-bottom: 48px;
     text-align: center;
 
-    @include get-font-styles(18px, 700);
-    font-stretch: condensed;
+    @include get-h2-mobile-style;
   }
 
   .grid {
@@ -68,8 +67,7 @@
   #page-news {
   
     h2 {
-      @include get-font-styles(38px, 700);
-      font-stretch: condensed;
+      @include get-h2-desktop-style;
     }
 
     .grid {

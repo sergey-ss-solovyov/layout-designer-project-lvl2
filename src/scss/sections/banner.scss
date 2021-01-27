@@ -30,8 +30,7 @@
     }
 
     h2 {
-      @include get-font-styles(18px, 700);
-      font-stretch: condensed;
+      @include get-h2-mobile-style;
     }
   }
   
@@ -117,25 +116,8 @@
   
       h2 {
         margin-bottom: 32px;
-        @include get-font-styles(38px, 700);
+        @include get-h2-desktop-style;
       }
     }
   }
 }
-
-// @media (min-width: 1024px) {
-//   #page-description {
-//     .container {
-//       margin: 0 100px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1440px) {
-//   header {
-//     .container {
-//       max-width: 1240px;
-//       margin: 0 auto;
-//     }
-//   }
-// }

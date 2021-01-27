@@ -211,6 +211,19 @@ li {
   font-stretch: condensed;
 }
 
+.download-btn {
+  width: 129px;
+  height: 51px;
+  border: 1px solid #95390c;
+  border-radius: 2rem;
+  background-color: #95390c;
+}
+.download-btn a {
+  color: #fff;
+  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+  font-stretch: condensed;
+}
+
 @media (min-width: 375px) {
   .access-btn {
     width: 100%;
@@ -426,6 +439,7 @@ header input {
   #page-description .container h2 {
     margin-bottom: 32px;
     font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
+    font-stretch: condensed;
   }
 }
 #page-pricing {
@@ -646,6 +660,62 @@ header input {
   }
   #page-news .grid .singer.singer-2 .news-card-2 {
     order: 1;
+  }
+}
+#page-app {
+  padding: 100px 0;
+}
+#page-app h2 {
+  margin-bottom: 48px;
+  text-align: center;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+#page-app .wrapper {
+  max-width: 374px;
+  margin: 0 auto;
+}
+#page-app .wrapper .flex {
+  display: flex;
+  flex-direction: column;
+}
+#page-app .wrapper .flex img {
+  display: block;
+  order: 1;
+  margin: auto;
+  width: 100%;
+}
+#page-app .wrapper .flex .app-description {
+  position: relative;
+  top: -14px;
+  order: 2;
+  margin: 0 auto;
+}
+#page-app .wrapper .flex .app-description .btn {
+  margin-top: 16px;
+}
+
+@media (min-width: 843px) {
+  #page-app h2 {
+    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
+    font-stretch: condensed;
+  }
+  #page-app .wrapper {
+    max-width: 100%;
+  }
+  #page-app .wrapper .flex {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  #page-app .wrapper .flex .app-description {
+    top: 0;
+    order: 1;
+    margin: 0;
+    max-width: 600px;
+  }
+  #page-app .wrapper .flex img {
+    order: 2;
+    max-width: 333px;
   }
 }
 

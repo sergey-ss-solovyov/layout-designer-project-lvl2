@@ -41,6 +41,20 @@
   }
 }
 
+.download-btn {
+  width: 129px;
+  height: 51px;
+  border: 1px solid get-color('red');
+  border-radius: 2rem;
+  background-color: get-color('red');
+
+  a {
+    color: get-color();
+    @include get-font-styles(12.8px, 400, 1.5);
+    font-stretch: condensed;
+  }
+}
+
 @media (min-width: 375px) {
   .access-btn {
     width: 100%;
