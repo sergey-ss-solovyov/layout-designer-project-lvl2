@@ -1,0 +1,39 @@
+@import "../abstracts/functions";
+@import "../abstracts/mixins";
+
+footer {
+  &.bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  }
+
+  h2 {
+    margin: 0;
+    @include get-h2-mobile-style;
+  }
+
+  .footer-up {
+    padding: 32px 0 75px 0;
+
+    .submenu {
+      margin-top: 30px;
+
+      h2 + ul {
+        margin-top: 16px;
+      }
+
+      .icons li + li{
+        margin-left: 24px;
+      }
+    }
+  }
+  .footer-down {
+    padding: 40px 0 48px 0;
+    border-top: 1px solid get-color('gray');
+
+    .submenu {
+      li + li {
+        margin-top: 16px;
+      }
+    }
+  }
+}

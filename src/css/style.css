@@ -243,6 +243,34 @@ li {
     grid-row: 2/2;
   }
 }
+footer.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+footer h2 {
+  margin: 0;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+footer .footer-up {
+  padding: 32px 0 75px 0;
+}
+footer .footer-up .submenu {
+  margin-top: 30px;
+}
+footer .footer-up .submenu h2 + ul {
+  margin-top: 16px;
+}
+footer .footer-up .submenu .icons li + li {
+  margin-left: 24px;
+}
+footer .footer-down {
+  padding: 40px 0 48px 0;
+  border-top: 1px solid #e0e0e0;
+}
+footer .footer-down .submenu li + li {
+  margin-top: 16px;
+}
+
 header {
   position: absolute;
   top: 27px;
