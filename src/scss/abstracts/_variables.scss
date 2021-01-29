@@ -2,9 +2,6 @@
 $regular-font: ('Roboto-Regular', 'sans-serif');
 $bold-font: ('Roboto-Bold', 'sans-serif');
 
-// $primary-text-color: get-color();
-// $secondary-text-color: get-color('gray');
-
 /// ------ Colors ------
 $colors: (
   'primary': #fff,
@@ -17,20 +14,3 @@ $colors: (
   'green': #34c176,
   'orange': #f89202,
 );
-
-/// ------ Breakpoints ------
-
-/// bs-sm >= 576px; margin 2 * 18px
-/// bs-md >= 768px; margin 2 * 24px
-/// bs-lg >= 992px; margin 2 * 16px
-/// bs-xl >= 1200px; margin 2 * 30px
-
-  $breakpoints: (
-    'xx-small': 320px,
-    'x-small': 414px,
-    'small': 610px,
-    'medium': 768px,
-    'large': 1024px,
-    'x-large': 1280px,
-    'xx-large': 1440px,
-  );

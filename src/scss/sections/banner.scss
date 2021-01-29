@@ -11,7 +11,6 @@
   }
 
   .container {
-
     h1,
     h2,
     p {
@@ -26,6 +25,7 @@
 
     h1 {
       @include get-font-styles(30px, 700);
+
       font-stretch: condensed;
     }
 
@@ -33,7 +33,6 @@
       @include get-h2-mobile-style;
     }
   }
-  
 
   .grid {
     display: grid;
@@ -58,9 +57,8 @@
       }
     }
   }
-} 
+}
 
-/// ------ media ------
 @media (min-width: 375px) {
   #page-description {
     .grid {
@@ -97,6 +95,7 @@
         grid-column: 2 / span 1;
         grid-row: 1 / 1;
       }
+
       .ctrl-2 {
         grid-column: 3 / span 1;
         grid-row: 1 / 1;
@@ -113,9 +112,10 @@
       h1 {
         @include get-font-styles(60px, 700);
       }
-  
+
       h2 {
         margin-bottom: 32px;
+
         @include get-h2-desktop-style;
       }
     }

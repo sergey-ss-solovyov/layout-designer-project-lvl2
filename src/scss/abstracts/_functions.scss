@@ -3,7 +3,3 @@
 @function get-color($key: 'primary') {
   @return map-get($colors, $key);
 }
-
-@function get-breakpoint($key: 'small') {
-  @return map-get($breakpoints, $key);
-}

@@ -6,7 +6,7 @@
   h2 {
     margin-bottom: 46px;
     text-align: center;
-    
+
     @include get-h2-mobile-style;
   }
 
@@ -35,9 +35,10 @@
         margin: 18px 0 184px 0;
 
         @include get-font-styles(16px, 700);
+
         font-stretch: condensed;
       }
-      
+
       .price {
         display: flex;
         margin-bottom: 24px;
@@ -45,17 +46,17 @@
 
         .amount {
           margin-right: 16px;
-          
+
           @include get-font-styles(64px);
         }
 
         span {
           margin-top: 12px;
-          
+
           @include get-font-styles(32px);
         }
       }
-      
+
       .btn-container {
         margin-bottom: 64px;
         padding: 0 24px;
@@ -65,6 +66,7 @@
         padding: 0 24px;
 
         @include get-font-styles(12.8px);
+
         font-stretch: condensed;
       }
     }
@@ -94,15 +96,15 @@
       grid-template-rows: repeat(2, 621px);
       justify-content: center;
 
-        .card-1 {
-          grid-column: 1 / span 1;
-          grid-row: 1 / span 1;
-        }
-    
-        .card-2 {
-          grid-column: 2 / span 1;
-          grid-row: 1 / span 1;
-        }
+      .card-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+      }
+
+      .card-2 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+      }
 
       .card-3 {
         grid-column: 1 / span 2;
@@ -126,19 +128,20 @@
       .card {
         h3 {
           @include get-font-styles(24px, 400, 45/24);
+
           font-stretch: condensed;
         }
       }
 
-        .card-1 {
-          grid-column: 1 / span 1;
-          grid-row: 1 / span 1;
-        }
-    
-        .card-2 {
-          grid-column: 2 / span 1;
-          grid-row: 1 / span 1;
-        }
+      .card-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+      }
+
+      .card-2 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+      }
 
       .card-3 {
         grid-column: 3 / span 1;

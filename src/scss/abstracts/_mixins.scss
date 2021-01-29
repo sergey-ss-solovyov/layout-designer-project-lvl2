@@ -4,17 +4,21 @@
 @mixin get-font-styles($size, $weight: 400, $height: 1.5) {
   @if ($weight == 400) {
     font: normal $weight #{$size}/#{$height} $regular-font;
-  } @else {
+  }
+
+  @else {
     font: normal $weight #{$size}/#{$height} $bold-font;
   }
 }
 
 @mixin get-h2-desktop-style {
   @include get-font-styles(38px, 700);
-  font-stretch: condensed; 
+
+  font-stretch: condensed;
 }
 
 @mixin get-h2-mobile-style {
   @include get-font-styles(18px, 700);
-  font-stretch: condensed; 
+
+  font-stretch: condensed;
 }

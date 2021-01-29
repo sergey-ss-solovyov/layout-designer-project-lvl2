@@ -8,6 +8,7 @@ header {
 
   .container {
     @include get-font-styles(11px, 700, 1.15);
+
     font-stretch: condensed;
   }
 
@@ -40,7 +41,7 @@ header {
       margin-top: 3px;
     }
   }
-  
+
   a {
     color: get-color();
   }
@@ -58,6 +59,7 @@ header {
 .main-logo {
   width: 24px;
   height: 24px;
+  margin: 1px 16px 0 0;
 }
 
 @media (min-width: 414px) {
@@ -80,12 +82,12 @@ header {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
       }
-      
+
       .control-2 {
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
       }
-      
+
       .control-3 {
         grid-column: 1 / span 2;
         grid-row: 2;
@@ -93,7 +95,7 @@ header {
 
       nav {
         align-self: center;
-        
+
         ul {
           display: flex;
           flex-wrap: wrap;

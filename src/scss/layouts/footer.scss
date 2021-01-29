@@ -8,24 +8,10 @@ footer {
 
   h2 {
     margin: 0;
+
     @include get-h2-mobile-style;
   }
 
-  .footer-up {
-    padding: 32px 0 75px 0;
-
-    .submenu {
-      margin-top: 30px;
-
-      h2 + ul {
-        margin-top: 16px;
-      }
-
-      .icons li + li{
-        margin-left: 24px;
-      }
-    }
-  }
   .footer-down {
     padding: 40px 0 48px 0;
     border-top: 1px solid get-color('gray');
@@ -33,6 +19,41 @@ footer {
     .submenu {
       li + li {
         margin-top: 16px;
+      }
+    }
+  }
+
+  .footer-up {
+    padding: 32px 0 75px 0;
+
+    .flex {
+      justify-content: space-between;
+    }
+
+    .submenu {
+      margin: 30px 20px 0 0;
+
+      h2 + ul {
+        margin-top: 16px;
+      }
+
+      .icons li + li {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .footer-down {
+    .submenu {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li + li {
+          margin: 0 0 0 15px;
+        }
       }
     }
   }

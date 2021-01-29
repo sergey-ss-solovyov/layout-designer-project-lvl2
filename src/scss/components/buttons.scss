@@ -12,7 +12,9 @@
   border-radius: 5px;
   background-color: get-color("green");
   color: get-color();
+
   @include get-font-styles(13.3px, 400, 1.15);
+
   font-stretch: condensed;
 }
 
@@ -23,7 +25,9 @@
   border-radius: 5px;
   background-color: transparent;
   color: get-color();
+
   @include get-font-styles(16px);
+
   font-stretch: condensed;
 }
 
@@ -36,7 +40,9 @@
 
   a {
     color: get-color('dark-gray');
+
     @include get-font-styles(12.8px, 400, 1.5);
+
     font-stretch: condensed;
   }
 }
@@ -50,7 +56,9 @@
 
   a {
     color: get-color();
+
     @include get-font-styles(12.8px, 400, 1.5);
+
     font-stretch: condensed;
   }
 }

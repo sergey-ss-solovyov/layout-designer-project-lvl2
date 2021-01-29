@@ -18,22 +18,20 @@
     .flex {
       display: flex;
       flex-direction: column;
-  
+
       img {
         display: block;
         order: 1;
-  
         margin: auto;
         width: 100%;
       }
-  
+
       .app-description {
         position: relative;
         top: -14px;
         order: 2;
-  
         margin: 0 auto;
-  
+
         .btn {
           margin-top: 16px;
         }
@@ -44,7 +42,6 @@
 
 @media (min-width: 843px) {
   #page-app {
-
     h2 {
       @include get-h2-desktop-style;
     }
@@ -54,20 +51,17 @@
 
       .flex {
         flex-direction: row;
-  
         max-width: 100%;
-  
+
         .app-description {
           top: 0;
           order: 1;
-  
           margin: 0;
           max-width: 600px;
         }
-  
+
         img {
           order: 2;
-  
           max-width: 333px;
         }
       }

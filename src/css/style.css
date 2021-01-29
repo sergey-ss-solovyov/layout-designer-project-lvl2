@@ -1,3 +1,8 @@
+body {
+  color: #fff;
+  font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
+}
+
 body,
 ul,
 input,
@@ -33,7 +38,6 @@ a {
 }
 
 .flex-wrap {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -51,14 +55,6 @@ li {
 
 .orange {
   color: #f89202;
-}
-
-.mr-16 {
-  margin-right: 16px;
-}
-
-.mt-1 {
-  margin-top: 1px;
 }
 
 @media (min-width: 1024px) {
@@ -80,98 +76,6 @@ li {
   font-family: "Roboto-Regular";
   src: url("../../fonts/Roboto-Regular.ttf");
 }
-.fs-primary {
-  color: #fff;
-  font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-h1-dt {
-  font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-h2-dt {
-  font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-h3-dt {
-  font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
-}
-
-.fs-h3-dt-cap {
-  font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
-  text-transform: capitalize;
-}
-
-.fs-h3-dt-bold {
-  font: normal 700 24px/1.875 "Roboto-Bold", "sans-serif";
-  text-transform: capitalize;
-}
-
-.fs-h4-dt {
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-h4-dt-cap {
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  text-transform: capitalize;
-}
-
-.fs-h1-mb {
-  font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-h2-mb {
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-h3-mb {
-  font: normal 700 16px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-h4-mb {
-  font: normal 700 18px/1.33 "Roboto-Bold", "sans-serif";
-}
-
-.fs-txt-64 {
-  font: normal 400 64px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-56 {
-  font: normal 400 56px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-48 {
-  font: normal 400 48px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-40 {
-  font: normal 400 40px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-32 {
-  font: normal 400 32px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-30 {
-  font: normal 400 30px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-24 {
-  font: normal 400 24px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-12 {
-  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
-}
-
-.fs-txt-12-bold {
-  font: normal 700 12.8px/1.5 "Roboto-Bold", "sans-serif";
-}
-
-.fs-txt-11 {
-  font: normal 700 11px/1.15 "Roboto-Bold", "sans-serif";
-}
-
 .btn {
   text-align: center;
 }
@@ -251,18 +155,6 @@ footer h2 {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-footer .footer-up {
-  padding: 32px 0 75px 0;
-}
-footer .footer-up .submenu {
-  margin-top: 30px;
-}
-footer .footer-up .submenu h2 + ul {
-  margin-top: 16px;
-}
-footer .footer-up .submenu .icons li + li {
-  margin-left: 24px;
-}
 footer .footer-down {
   padding: 40px 0 48px 0;
   border-top: 1px solid #e0e0e0;
@@ -270,7 +162,31 @@ footer .footer-down {
 footer .footer-down .submenu li + li {
   margin-top: 16px;
 }
+footer .footer-up {
+  padding: 32px 0 75px 0;
+}
+footer .footer-up .flex {
+  justify-content: space-between;
+}
+footer .footer-up .submenu {
+  margin: 30px 20px 0 0;
+}
+footer .footer-up .submenu h2 + ul {
+  margin-top: 16px;
+}
+footer .footer-up .submenu .icons li + li {
+  margin-left: 24px;
+}
 
+@media (min-width: 650px) {
+  .footer-down .submenu ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-down .submenu ul li + li {
+    margin: 0 0 0 15px;
+  }
+}
 header {
   position: absolute;
   top: 27px;
@@ -318,6 +234,7 @@ header input {
 .main-logo {
   width: 24px;
   height: 24px;
+  margin: 1px 16px 0 0;
 }
 
 @media (min-width: 414px) {

@@ -29,6 +29,5 @@
     "surge": "^0.21.7"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
   }
 }
