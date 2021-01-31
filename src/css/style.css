@@ -7,7 +7,9 @@ body,
 ul,
 input,
 p,
-figure {
+h2,
+figure,
+button {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -126,6 +128,30 @@ li {
   color: #fff;
   font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
   font-stretch: condensed;
+}
+
+.art-banner .btn {
+  border-radius: 5px;
+}
+.art-banner .btn + .btn {
+  margin-top: 24px;
+}
+.art-banner .mix-btn,
+.art-banner .favorite-btn {
+  width: 200px;
+  height: 62px;
+  text-align: start;
+  color: #fff;
+  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+  font-stretch: condensed;
+}
+.art-banner .mix-btn {
+  background-color: #5328a1;
+  border: 1px solid #5328a1;
+}
+.art-banner .favorite-btn {
+  background-color: #95390c;
+  border: 1px solid #95390c;
 }
 
 @media (min-width: 375px) {
@@ -295,39 +321,38 @@ header input {
     justify-self: end;
   }
 }
-#page-description {
-  padding: 250px 0 0 0;
-  height: 603px;
-}
-#page-description.bg-banner {
-  background-image: url("../../src/images/banner.png");
-  background-size: cover;
-  background-position-x: center;
-}
-#page-description .container h1,
-#page-description .container h2,
-#page-description .container p {
-  margin: 0;
-  text-align: center;
-}
-#page-description .container h2,
-#page-description .container p {
-  margin-bottom: 16px;
-}
-#page-description .container h1 {
+.banner h1 {
   font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-#page-description .container h2 {
+.banner h2 {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-#page-description .grid {
+.banner.bg-banner {
+  background-size: cover;
+  background-position-x: center;
+}
+.banner.home-banner {
+  padding: 250px 0 200px 0;
+  background-image: url("../../src/images/banner.png");
+}
+.banner.home-banner h1,
+.banner.home-banner h2,
+.banner.home-banner p {
+  margin: 0;
+  text-align: center;
+}
+.banner.home-banner h2,
+.banner.home-banner p {
+  margin-bottom: 16px;
+}
+.banner.home-banner .grid {
   display: grid;
   grid-template-rows: repeat(2, 50px) 57px;
   gap: 24px;
 }
-#page-description .grid .form-control {
+.banner.home-banner .grid .form-control {
   width: 100%;
   margin: 0 auto;
   padding-left: 22px;
@@ -336,55 +361,85 @@ header input {
   border-radius: 3px;
   color: #fff;
 }
-#page-description .grid .form-control::-moz-placeholder {
+.banner.home-banner .grid .form-control::-moz-placeholder {
   color: #fff;
 }
-#page-description .grid .form-control::-webkit-input-placeholder {
+.banner.home-banner .grid .form-control::-webkit-input-placeholder {
   color: #fff;
+}
+.banner.art-banner {
+  padding: 225px 0;
+  background-image: url("../../src/images/Morten Harket.png");
+}
+.banner.art-banner h1 {
+  margin: 0 0 16px 0;
+}
+.banner.art-banner p {
+  margin: 0 0 48px 0;
+}
+.banner.art-banner .flex {
+  flex-direction: column;
+}
+.banner.art-banner .flex button img {
+  vertical-align: middle;
+  margin-left: 31px;
+  filter: invert(1);
+}
+.banner.art-banner .flex button .play-icon {
+  width: 20px;
+  height: 20px;
+}
+.banner.art-banner .flex button .favorite-icon {
+  width: 20px;
+  height: 18px;
+}
+.banner.art-banner .flex button span {
+  margin-left: 16px;
 }
 
 @media (min-width: 375px) {
-  #page-description .grid .form-control {
+  .banner.home-banner .grid .form-control {
     width: 100%;
   }
 }
 @media (min-width: 414px) {
-  #page-description .grid .form-control {
+  .banner.home-banner .grid .form-control {
     width: 100%;
     max-width: 374px;
   }
 }
 @media (min-width: 650px) {
-  #page-description {
-    padding: 200px 0 0 0;
-    height: 501px;
+  .banner.home-banner {
+    padding: 200px 0;
   }
-  #page-description .grid {
+  .banner.home-banner .grid {
     display: grid;
     grid-template-columns: auto repeat(2, 273px) auto;
     grid-template-rows: 50px 57px;
     gap: 24px;
   }
-  #page-description .grid .ctrl-1 {
+  .banner.home-banner .grid .ctrl-1 {
     grid-column: 2/span 1;
     grid-row: 1/1;
   }
-  #page-description .grid .ctrl-2 {
+  .banner.home-banner .grid .ctrl-2 {
     grid-column: 3/span 1;
     grid-row: 1/1;
   }
 }
 @media (min-width: 807px) {
-  #page-description {
-    padding: 200px 0 50px 0;
-  }
-  #page-description .container h1 {
+  .banner.home-banner .container h1 {
     font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
   }
-  #page-description .container h2 {
+  .banner.home-banner .container h2 {
     margin-bottom: 32px;
     font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
     font-stretch: condensed;
+  }
+}
+@media (min-width: 807px) {
+  .banner.art-banner .container h1 {
+    font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
   }
 }
 #page-pricing {
@@ -457,6 +512,10 @@ header input {
 }
 
 @media (min-width: 843px) {
+  #page-pricing h2 {
+    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
+    font-stretch: condensed;
+  }
   #page-pricing .grid {
     display: grid;
     grid-template-columns: repeat(2, 376px);
@@ -477,10 +536,6 @@ header input {
   }
 }
 @media (min-width: 1440px) {
-  #page-pricing h2 {
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
-  }
   #page-pricing .grid {
     display: grid;
     grid-template-columns: repeat(3, 378px);

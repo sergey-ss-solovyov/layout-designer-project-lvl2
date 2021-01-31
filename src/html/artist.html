@@ -11,38 +11,40 @@
   </head>
   <body class="fs-primary">
     <!-- HEADER -->
-    <header id="page-description">
-      <div class="grid">
-        <div>
-          <img src="../images/logo.svg" alt="music box logo">
-          <p>music box</p>
+    <header>
+      <div class="container upper">
+        <div class="grid">
+          <div class="control-1 y-center">
+            <img class="main-logo" src="../images/logo.svg" alt="music box logo">
+            <span>music box</span>
+          </div>
+          <nav class="control-2">
+            <ul>
+              <li><a href="">главная</a></li>
+              <li><a href="">каталог</a></li>
+              <li><a href="">исполнители</a></li>
+              <li><a href="">контакты</a></li>
+            </ul>
+          </nav>
+          <input type="text" class="control-3" placeholder="ПОИСК...">
         </div>
-        <nav>
-          <ul>
-            <li><a href=""></a>главная</li>
-              <li><a href=""></a>каталог</li>
-              <li><a href=""></a>исполнители</li>
-              <li><a href=""></a>контакты</li>
-          </ul>
-        </nav>
-        <input type="text" placeholder="ПОИСК...">
       </div>
     </header>
     <!-- BANNER -->
-    <section>
-      <div>
-        <h1>morten harket</h1>
-        <p>24 875 поклонников</p>
-      </div>
-      <div class="flex">
-        <button>
-          <img src="../images/play-button.svg" alt="">
-          микс
-        </button>
-        <button>
-          <img src="../images/heart.svg" alt="">
-          в избранное
-        </button>
+    <section id ="page-description" class="banner bg-banner art-banner">
+      <div class="container">
+          <h1 class="upper">morten harket</h1>
+          <p>24 875 поклонников</p>
+        <div class="flex">
+          <button type="submit" class="btn mix-btn upper">
+              <img src="../images/play-button.svg" class="play-icon" alt="play icon">
+              <span>микс</span>
+          </button>
+          <button type="submit" class="btn favorite-btn upper">
+              <img src="../images/heart.svg" class="favorite-icon" alt="favorite icon">
+              <span>в избранное</span>
+          </button>
+        </div>
       </div>
     </section>
     <main>

@@ -1,66 +1,105 @@
 @import "../abstracts/functions";
 
-#page-description {
-  padding: 250px 0 0 0;
-  height: 603px;
+.banner {
+  h1 {
+    @include get-font-styles(30px, 700);
+
+    font-stretch: condensed;
+  }
+
+  h2 {
+    @include get-h2-mobile-style;
+  }
 
   &.bg-banner {
-    background-image: url("../../src/images/banner.png");
     background-size: cover;
     background-position-x: center;
   }
 
-  .container {
+  &.home-banner {
+    padding: 250px 0 200px 0;
+    background-image: url("../../src/images/banner.png");
+
     h1,
     h2,
     p {
       margin: 0;
       text-align: center;
     }
-
+    
     h2,
     p {
       margin-bottom: 16px;
     }
 
-    h1 {
-      @include get-font-styles(30px, 700);
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(2, 50px) 57px;
+      gap: 24px;
 
-      font-stretch: condensed;
-    }
+      .form-control {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 22px;
+        background-color: transparent;
+        border: solid 2px get-color("dark-gray");
+        border-radius: 3px;
+        color: get-color();
 
-    h2 {
-      @include get-h2-mobile-style;
+        &::-moz-placeholder {
+          color: get-color();
+        }
+
+        &::-webkit-input-placeholder {
+          color: get-color();
+        }
+      }
     }
   }
 
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(2, 50px) 57px;
-    gap: 24px;
+  &.art-banner {
+    padding: 225px 0;
+    background-image: url("../../src/images/Morten Harket.png");
 
-    .form-control {
-      width: 100%;
-      margin: 0 auto;
-      padding-left: 22px;
-      background-color: transparent;
-      border: solid 2px get-color("dark-gray");
-      border-radius: 3px;
-      color: get-color();
+    h1 {
+      margin: 0 0 16px 0;
+    }
 
-      &::-moz-placeholder {
-        color: get-color();
-      }
+    p {
+      margin: 0 0 48px 0;
+    }
 
-      &::-webkit-input-placeholder {
-        color: get-color();
+    .flex {
+      flex-direction: column;
+
+      button {
+        img { 
+          vertical-align: middle;
+          margin-left: 31px;
+          filter: invert(1);
+        }
+
+        .play-icon {
+          width: 20px;
+          height: 20px;
+        }
+
+        .favorite-icon {
+          width: 20px;
+          height: 18px;
+        }
+
+        span {
+          margin-left: 16px;
+        }
       }
     }
   }
 }
 
+// ------ HOME MEDIA ------
 @media (min-width: 375px) {
-  #page-description {
+  .banner.home-banner {
     .grid {
       .form-control {
         width: 100%;
@@ -70,7 +109,7 @@
 }
 
 @media (min-width: 414px) {
-  #page-description {
+  .banner.home-banner {
     .grid {
       .form-control {
         width: 100%;
@@ -81,9 +120,8 @@
 }
 
 @media (min-width: 650px) {
-  #page-description {
-    padding: 200px 0 0 0;
-    height: 501px;
+  .banner.home-banner {
+    padding: 200px 0;
 
     .grid {
       display: grid;
@@ -105,9 +143,7 @@
 }
 
 @media (min-width: 807px) {
-  #page-description {
-    padding: 200px 0 50px 0;
-
+  .banner.home-banner {
     .container {
       h1 {
         @include get-font-styles(60px, 700);
@@ -117,6 +153,17 @@
         margin-bottom: 32px;
 
         @include get-h2-desktop-style;
+      }
+    }
+  }
+}
+
+// ------ ARTIST MEDIA ------
+@media (min-width: 807px) {
+  .banner.art-banner {
+    .container {
+      h1 {
+        @include get-font-styles(60px, 700);
       }
     }
   }

@@ -63,6 +63,38 @@
   }
 }
 
+.art-banner {
+  .btn {
+    border-radius: 5px;
+  }
+  
+  .btn + .btn {
+    margin-top: 24px;
+  }
+  
+  .mix-btn,
+  .favorite-btn {
+    width: 200px;
+    height: 62px;
+    text-align: start;
+    color: get-color();
+
+    @include get-font-styles(12.8px, 400, 1.5);
+
+    font-stretch: condensed;
+  }
+  
+  .mix-btn {
+    background-color: get-color("purple");
+    border: 1px solid get-color("purple");
+  }
+
+  .favorite-btn {
+    background-color: get-color("red");
+    border: 1px solid get-color("red");
+  }
+}
+
 @media (min-width: 375px) {
   .access-btn {
     width: 100%;
