@@ -1,4 +1,4 @@
-#page-discography {
+.catalogue {
   padding: 100px 0 0 0;
 
   h2 {
@@ -18,7 +18,7 @@
 }
 
 @media (min-width: 375px) {
-  #page-discography {
+  .catalogue {
     .container {
       .grid {
         gap: 25px 50px;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 414px) {
-  #page-discography {
+  .catalogue {
     .container {
       .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 590px) {
-  #page-discography {
+  .catalogue {
     .container {
       .grid {
         grid-template-columns: repeat(2, 250px);
@@ -49,7 +49,7 @@
 }
 
 @media (min-width: 890px) {
-  #page-discography {
+  .catalogue {
     .container {
       .grid {
         grid-template-columns: repeat(3, 250px);
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: 1024px) {
-  #page-discography {
+  .catalogue {
     h2 {
       @include get-h2-desktop-style();
     }
@@ -67,7 +67,7 @@
 }
 
 @media (min-width: 1350px) {
-  #page-discography {
+  .catalogue {
     .container {
       .grid {
         grid-template-columns: repeat(4, 250px);
