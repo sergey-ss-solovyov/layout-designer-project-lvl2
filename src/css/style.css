@@ -8,6 +8,7 @@ ul,
 input,
 p,
 h2,
+h3,
 figure,
 button {
   box-sizing: border-box;
@@ -77,6 +78,23 @@ li {
 @font-face {
   font-family: "Roboto-Regular";
   src: url("../../fonts/Roboto-Regular.ttf");
+}
+.catalogue-item {
+  max-width: 137px;
+}
+.catalogue-item img {
+  max-width: 100%;
+}
+.catalogue-item .catalogue-info h3 {
+  margin-top: 18px;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+
+@media (min-width: 414px) {
+  .catalogue-item {
+    max-width: 250px;
+  }
 }
 .btn {
   text-align: center;
@@ -670,6 +688,53 @@ header input {
 @media (min-width: 1440px) {
   .grid {
     margin-right: 50px;
+  }
+}
+#page-discography {
+  padding: 100px 0 0 0;
+}
+#page-discography h2 {
+  margin-bottom: 48px;
+  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  font-stretch: condensed;
+}
+#page-discography .container .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 137px);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 25px 20px;
+}
+
+@media (min-width: 375px) {
+  #page-discography .container .grid {
+    gap: 25px 50px;
+  }
+}
+@media (min-width: 414px) {
+  #page-discography .container .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 590px) {
+  #page-discography .container .grid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (min-width: 890px) {
+  #page-discography .container .grid {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+@media (min-width: 1024px) {
+  #page-discography h2 {
+    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
+    font-stretch: condensed;
+  }
+}
+@media (min-width: 1350px) {
+  #page-discography .container .grid {
+    grid-template-columns: repeat(4, 250px);
   }
 }
 #page-news {
