@@ -4,12 +4,13 @@
   img {
     max-width: 100%;
   }
-  
+
   .catalogue-info {
     h3 {
       margin-top: 18px;
-  
+
       @include get-font-styles(18px, 700);
+
       font-stretch: condensed;
     }
   }

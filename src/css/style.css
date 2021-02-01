@@ -693,6 +693,9 @@ header input {
 .catalogue {
   padding: 100px 0 0 0;
 }
+.catalogue#page-similar {
+  padding: 100px 0;
+}
 .catalogue h2 {
   margin-bottom: 48px;
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";

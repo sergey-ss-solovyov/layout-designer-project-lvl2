@@ -67,11 +67,11 @@
   .btn {
     border-radius: 5px;
   }
-  
+
   .btn + .btn {
     margin-top: 24px;
   }
-  
+
   .mix-btn,
   .favorite-btn {
     width: 200px;
@@ -83,7 +83,7 @@
 
     font-stretch: condensed;
   }
-  
+
   .mix-btn {
     background-color: get-color("purple");
     border: 1px solid get-color("purple");
