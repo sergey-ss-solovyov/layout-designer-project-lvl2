@@ -3,8 +3,6 @@
 .banner {
   h1 {
     @include get-font-styles(30px, 700);
-
-    font-stretch: condensed;
   }
 
   h2 {
@@ -17,7 +15,7 @@
   }
 
   &.home-banner {
-    padding: 250px 20px 200px 20px;
+    padding: 248px 20px 200px 20px;
     background-image: url("../../src/images/banner.png");
 
     h1,
@@ -97,7 +95,7 @@
         }
 
         span {
-          margin-left: 16px;
+          margin-left: 12px;
         }
       }
     }

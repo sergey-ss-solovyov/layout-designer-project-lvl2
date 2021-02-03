@@ -1,6 +1,10 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
 body {
   color: #fff;
-  font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 16px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 
 body,
@@ -65,14 +69,6 @@ li {
   margin: 0 20px;
 }
 
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../../fonts/Roboto-Bold.ttf");
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../../fonts/Roboto-Regular.ttf");
-}
 .catalogue-item {
   max-width: 137px;
 }
@@ -80,8 +76,8 @@ li {
   max-width: 100%;
 }
 .catalogue-item .catalogue-info h3 {
-  margin-top: 18px;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
+  margin-top: 11px;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
   font-stretch: condensed;
 }
 
@@ -101,7 +97,7 @@ li {
   border-radius: 5px;
   background-color: #34c176;
   color: #fff;
-  font: normal 400 13.3px/1.15 "Roboto-Regular", "sans-serif";
+  font: normal 400 13.3px/1.15 "Roboto", "sans-serif", sans-serif;
   font-stretch: condensed;
 }
 
@@ -112,7 +108,7 @@ li {
   border-radius: 5px;
   background-color: transparent;
   color: #fff;
-  font: normal 400 16px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 16px/1.5 "Roboto", "sans-serif", sans-serif;
   font-stretch: condensed;
 }
 
@@ -125,7 +121,7 @@ li {
 }
 .album-btn a {
   color: #cacaca;
-  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
   font-stretch: condensed;
 }
 
@@ -138,7 +134,7 @@ li {
 }
 .download-btn a {
   color: #fff;
-  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
   font-stretch: condensed;
 }
 
@@ -154,7 +150,7 @@ li {
   height: 62px;
   text-align: start;
   color: #fff;
-  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
   font-stretch: condensed;
 }
 .art-banner .mix-btn {
@@ -190,8 +186,7 @@ footer.bg-gradient {
 }
 footer h2 {
   margin: 0;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 footer hr {
   margin: 0;
@@ -204,16 +199,13 @@ footer .footer-down .submenu li + li {
   margin-top: 16px;
 }
 footer .footer-up {
-  padding: 32px 0 75px 0;
-}
-footer .footer-up .flex {
-  justify-content: space-between;
+  padding: 32px 0 66px 0;
 }
 footer .footer-up .submenu {
-  margin: 30px 20px 0 0;
+  margin: 30px 30px 0 0;
 }
 footer .footer-up .submenu h2 + ul {
-  margin-top: 16px;
+  margin-top: 16.5px;
 }
 footer .footer-up .submenu .icons li + li {
   margin-left: 24px;
@@ -237,16 +229,15 @@ footer .footer-down {
 }
 header {
   position: absolute;
-  top: 27px;
+  top: 25px;
   left: 0;
   right: 0;
-  font: normal 700 11px/1.15 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 11px/1.2 "Roboto", "sans-serif", sans-serif;
 }
 header .grid {
   display: grid;
-  grid-template-rows: 24px 55px 25px;
-  gap: 17px;
+  grid-template-rows: 24px 60px 27px;
+  gap: 18px;
 }
 header .grid .control-1 {
   display: flex;
@@ -348,19 +339,17 @@ header input {
   }
 }
 .banner h1 {
-  font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 30px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 .banner h2 {
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 .banner.bg-banner {
   background-size: cover;
   background-position-x: center;
 }
 .banner.home-banner {
-  padding: 250px 20px 200px 20px;
+  padding: 248px 20px 200px 20px;
   background-image: url("../../src/images/banner.png");
 }
 .banner.home-banner h1,
@@ -426,7 +415,7 @@ header input {
   height: 18px;
 }
 .banner.art-banner .flex button span {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 @media (min-width: 375px) {
@@ -461,37 +450,34 @@ header input {
 }
 @media (min-width: 807px) {
   .banner.home-banner h1 {
-    font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
+    font: normal 700 60px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   .banner.home-banner h2 {
     margin-bottom: 32px;
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
+    font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
 @media (min-width: 807px) {
   .banner.art-banner h1 {
-    font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
+    font: normal 700 60px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
 #page-pricing {
-  padding: 100px 0 0 0;
+  padding: 102px 0 0 0;
 }
 #page-pricing h2 {
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   text-align: center;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .common-terms {
   margin-top: 40px;
   text-align: center;
-  font-stretch: condensed;
 }
 #page-pricing .grid {
   display: grid;
-  grid-template-rows: repeat(3, 621px);
-  gap: 27px;
+  grid-template-rows: repeat(3, 597px);
+  gap: 48px;
 }
 #page-pricing .grid .card {
   width: 100%;
@@ -505,8 +491,7 @@ header input {
 }
 #page-pricing .grid .card h3 {
   margin: 18px 0 184px 0;
-  font: normal 700 16px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 16px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .grid .card .price {
   display: flex;
@@ -515,11 +500,11 @@ header input {
 }
 #page-pricing .grid .card .price .amount {
   margin-right: 16px;
-  font: normal 400 64px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 64px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .grid .card .price span {
   margin-top: 12px;
-  font: normal 400 32px/1.5 "Roboto-Regular", "sans-serif";
+  font: normal 400 32px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .grid .card .btn-container {
   margin-bottom: 64px;
@@ -527,8 +512,7 @@ header input {
 }
 #page-pricing .grid .card .terms {
   padding: 0 24px;
-  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
-  font-stretch: condensed;
+  font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .grid .card-1 {
   grid-row: 1/span 1;
@@ -545,8 +529,7 @@ header input {
 
 @media (min-width: 843px) {
   #page-pricing h2 {
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
+    font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   #page-pricing .grid {
     display: grid;
@@ -574,8 +557,7 @@ header input {
     grid-template-rows: 621px;
   }
   #page-pricing .grid .card h3 {
-    font: normal 400 24px/1.875 "Roboto-Regular", "sans-serif";
-    font-stretch: condensed;
+    font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
   }
   #page-pricing .grid .card-1 {
     grid-column: 1/span 1;
@@ -600,14 +582,13 @@ header input {
 }
 #page-popular-track h2 {
   margin-bottom: 48px;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-popular-track .grid {
   display: grid;
-  grid-template-columns: 55px 140px auto;
+  grid-template-columns: 55px minmax(170px, 456px) 25px;
   grid-template-rows: repeat(6, 55px);
-  gap: 25px;
+  gap: 25px 15px;
 }
 #page-popular-track .grid .cover {
   width: 55px;
@@ -618,13 +599,11 @@ header input {
   align-self: center;
 }
 #page-popular-track .grid .track div:nth-child(1) {
-  font: normal 700 12.8px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-popular-track .grid .track div:nth-child(2),
 #page-popular-track .grid .duration {
-  font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
-  font-stretch: condensed;
+  font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-popular-track .grid .duration {
   text-align: end;
@@ -632,7 +611,7 @@ header input {
 
 @media (min-width: 650px) {
   #page-popular-track .grid {
-    grid-template-columns: 55px 140px auto 55px 140px auto;
+    grid-template-columns: 55px 140px auto;
     grid-template-rows: repeat(3, 55px);
     gap: 25px;
   }
@@ -692,8 +671,7 @@ header input {
 }
 @media (min-width: 1024px) {
   #page-popular-track h2 {
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
+    font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
 @media (min-width: 1440px) {
@@ -707,18 +685,16 @@ header input {
 .catalogue {
   padding: 100px 0 0 0;
 }
-.catalogue#page-similar {
-  padding: 100px 0;
+.catalogue#page-similar .catalogue-info {
+  text-align: center;
 }
 .catalogue h2 {
   margin-bottom: 48px;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 .catalogue .grid {
   display: grid;
   grid-template-columns: repeat(2, 137px);
-  grid-template-rows: repeat(3, 1fr);
   gap: 25px 20px;
 }
 
@@ -730,12 +706,14 @@ header input {
 @media (min-width: 414px) {
   .catalogue .grid {
     grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
   }
 }
 @media (min-width: 590px) {
   .catalogue .grid {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(2, 1fr);
+    margin-right: 0;
   }
 }
 @media (min-width: 890px) {
@@ -745,8 +723,7 @@ header input {
 }
 @media (min-width: 1024px) {
   .catalogue h2 {
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
+    font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
 @media (min-width: 1350px) {
@@ -763,8 +740,7 @@ header input {
 #page-news h2 {
   margin-bottom: 48px;
   text-align: center;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-news .grid {
   display: grid;
@@ -787,16 +763,21 @@ header input {
   max-width: 374px;
   margin: 0 auto;
 }
+#page-news .grid .singer .news-card.news-card-1 .description {
+  margin-bottom: 24px;
+}
+#page-news .grid .singer .news-card.news-card-2 .description {
+  margin-bottom: 17px;
+}
 #page-news .grid .singer .news-card .album-title {
   margin-top: 50px;
   margin-bottom: 16px;
 }
 #page-news .grid .singer .news-card .description {
-  margin-bottom: 23px;
   color: #cacaca;
 }
 #page-news .grid .singer .news-card .flex {
-  margin-bottom: 48px;
+  margin-bottom: 47.5px;
 }
 #page-news .grid .singer .news-card .flex .music-box-avatar {
   height: 19px;
@@ -805,12 +786,12 @@ header input {
 }
 #page-news .grid .singer .news-card .flex p {
   margin-left: 16px;
+  font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 
 @media (min-width: 843px) {
   #page-news h2 {
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
+    font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   #page-news .grid .singer img {
     max-width: 575px;
@@ -819,7 +800,7 @@ header input {
     max-width: 575px;
   }
   #page-news .grid .singer .news-card .album-title {
-    font: normal 400 30px/1.5 "Roboto-Regular", "sans-serif";
+    font: normal 400 30px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
 @media (min-width: 1440px) {
@@ -863,21 +844,25 @@ header input {
 #page-app h2 {
   margin-bottom: 48px;
   text-align: center;
-  font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
-  font-stretch: condensed;
+  font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-app .flex {
   flex-direction: column;
 }
 #page-app .flex img {
   width: 100%;
-  margin-bottom: 16px;
 }
 #page-app .flex .app-description {
   position: relative;
-  top: -14px;
+  top: -18px;
   order: 2;
   margin: 0 auto;
+}
+#page-app .flex .app-description p {
+  font-size: 15.8px;
+}
+#page-app .flex .app-description p + p {
+  margin-top: 17px;
 }
 #page-app .flex .app-description .btn {
   margin-top: 16px;
@@ -888,8 +873,7 @@ header input {
     max-width: 1200px;
   }
   #page-app h2 {
-    font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
-    font-stretch: condensed;
+    font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   #page-app .flex {
     flex-direction: row;

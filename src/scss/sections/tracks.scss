@@ -9,9 +9,9 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 55px 140px auto;
+    grid-template-columns: 55px minmax(170px, 456px) 25px;
     grid-template-rows: repeat(6, 55px);
-    gap: 25px;
+    gap: 25px 15px;
 
     .cover {
       width: 55px;
@@ -25,15 +25,11 @@
 
     .track div:nth-child(1) {
       @include get-font-styles(12.8px, 700);
-
-      font-stretch: condensed;
     }
 
     .track div:nth-child(2),
     .duration {
       @include get-font-styles(12.8px, 400);
-
-      font-stretch: condensed;
     }
 
     .duration {
@@ -45,7 +41,7 @@
 @media (min-width: 650px) {
   #page-popular-track {
     .grid {
-      grid-template-columns: 55px 140px auto 55px 140px auto;
+      grid-template-columns: 55px 140px auto;
       grid-template-rows: repeat(3, 55px);
       gap: 25px;
 

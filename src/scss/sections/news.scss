@@ -36,18 +36,29 @@
         max-width: 374px;
         margin: 0 auto;
 
+        &.news-card-1 {
+          .description {
+            margin-bottom: 24px;
+          }
+        }
+
+        &.news-card-2 {
+          .description {
+            margin-bottom: 17px;
+          }
+        }
+
         .album-title {
           margin-top: 50px;
           margin-bottom: 16px;
         }
 
         .description {
-          margin-bottom: 23px;
           color: get-color('dark-gray');
         }
 
         .flex {
-          margin-bottom: 48px;
+          margin-bottom: 47.5px;
 
           .music-box-avatar {
             height: 19px;
@@ -57,6 +68,8 @@
 
           p {
             margin-left: 16px;
+
+            @include get-font-styles(12.8px);
           }
         }
       }

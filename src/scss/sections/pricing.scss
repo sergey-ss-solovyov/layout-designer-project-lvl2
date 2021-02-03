@@ -1,10 +1,10 @@
 @import "../abstracts/functions";
 
 #page-pricing {
-  padding: 100px 0 0 0;
+  padding: 102px 0 0 0;
 
   h2 {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
     text-align: center;
 
     @include get-h2-mobile-style;
@@ -13,13 +13,12 @@
   .common-terms {
     margin-top: 40px;
     text-align: center;
-    font-stretch: condensed;
   }
 
   .grid {
     display: grid;
-    grid-template-rows: repeat(3, 621px);
-    gap: 27px;
+    grid-template-rows: repeat(3, 597px);
+    gap: 48px;
 
     .card {
       width: 100%;
@@ -35,8 +34,6 @@
         margin: 18px 0 184px 0;
 
         @include get-font-styles(16px, 700);
-
-        font-stretch: condensed;
       }
 
       .price {
@@ -66,8 +63,6 @@
         padding: 0 24px;
 
         @include get-font-styles(12.8px);
-
-        font-stretch: condensed;
       }
     }
 
@@ -128,8 +123,6 @@
       .card {
         h3 {
           @include get-font-styles(24px, 400, 45/24);
-
-          font-stretch: condensed;
         }
       }
 

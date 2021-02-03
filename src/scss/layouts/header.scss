@@ -2,18 +2,16 @@
 
 header {
   position: absolute;
-  top: 27px;
+  top: 25px;
   left: 0;
   right: 0;
 
-  @include get-font-styles(11px, 700, 1.15);
-
-  font-stretch: condensed;
+  @include get-font-styles(11px, 700, 1.2);
 
   .grid {
     display: grid;
-    grid-template-rows: 24px 55px 25px;
-    gap: 17px;
+    grid-template-rows: 24px 60px 27px;
+    gap: 18px;
 
     .control-1 {
       display: flex;
