@@ -12,9 +12,13 @@ footer {
     @include get-h2-mobile-style;
   }
 
+  hr {
+    margin: 0;
+    border: 1px solid get-color('gray');
+  }
+
   .footer-down {
     padding: 40px 0 48px 0;
-    border-top: 1px solid get-color('gray');
 
     .submenu {
       li + li {
@@ -55,6 +59,16 @@ footer {
           margin: 0 0 0 15px;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    .footer-up,
+    .footer-down {
+      max-width: 1240px;
+      margin: 0 auto;
     }
   }
 }

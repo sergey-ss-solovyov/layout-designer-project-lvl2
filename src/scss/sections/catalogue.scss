@@ -11,53 +11,43 @@
     @include get-h2-mobile-style();
   }
 
-  .container {
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 137px);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 25px 20px;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 137px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px 20px;
   }
 }
 
 @media (min-width: 375px) {
   .catalogue {
-    .container {
-      .grid {
-        gap: 25px 50px;
-      }
+    .grid {
+      gap: 25px 50px;
     }
   }
 }
 
 @media (min-width: 414px) {
   .catalogue {
-    .container {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
 
 @media (min-width: 590px) {
   .catalogue {
-    .container {
-      .grid {
-        grid-template-columns: repeat(2, 250px);
-        grid-template-rows: repeat(2, 1fr);
-      }
+    .grid {
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(2, 1fr);
     }
   }
 }
 
 @media (min-width: 890px) {
   .catalogue {
-    .container {
-      .grid {
-        grid-template-columns: repeat(3, 250px);
-      }
+    .grid {
+      grid-template-columns: repeat(3, 250px);
     }
   }
 }
@@ -72,10 +62,10 @@
 
 @media (min-width: 1350px) {
   .catalogue {
-    .container {
-      .grid {
-        grid-template-columns: repeat(4, 250px);
-      }
+    width: 1200px;
+
+    .grid {
+      grid-template-columns: repeat(4, 250px);
     }
   }
 }

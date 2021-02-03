@@ -17,7 +17,7 @@
   }
 
   &.home-banner {
-    padding: 250px 0 200px 0;
+    padding: 250px 20px 200px 20px;
     background-image: url("../../src/images/banner.png");
 
     h1,
@@ -58,8 +58,15 @@
   }
 
   &.art-banner {
-    padding: 225px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     background-image: url("../../src/images/Morten Harket.png");
+
+    #page-description {
+      padding: 225px 0;
+      width: 1200px;
+    }
 
     h1 {
       margin: 0 0 16px 0;
@@ -144,16 +151,14 @@
 
 @media (min-width: 807px) {
   .banner.home-banner {
-    .container {
-      h1 {
-        @include get-font-styles(60px, 700);
-      }
+    h1 {
+      @include get-font-styles(60px, 700);
+    }
 
-      h2 {
-        margin-bottom: 32px;
+    h2 {
+      margin-bottom: 32px;
 
-        @include get-h2-desktop-style;
-      }
+      @include get-h2-desktop-style;
     }
   }
 }
@@ -161,10 +166,8 @@
 // ------ ARTIST MEDIA ------
 @media (min-width: 807px) {
   .banner.art-banner {
-    .container {
-      h1 {
-        @include get-font-styles(60px, 700);
-      }
+    h1 {
+      @include get-font-styles(60px, 700);
     }
   }
 }

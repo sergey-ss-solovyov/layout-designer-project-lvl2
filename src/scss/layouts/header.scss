@@ -6,11 +6,9 @@ header {
   left: 0;
   right: 0;
 
-  .container {
-    @include get-font-styles(11px, 700, 1.15);
+  @include get-font-styles(11px, 700, 1.15);
 
-    font-stretch: condensed;
-  }
+  font-stretch: condensed;
 
   .grid {
     display: grid;
@@ -136,5 +134,12 @@ header {
       max-width: 248px;
       justify-self: end;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    max-width: 1240px;
+    margin: 0 auto;
   }
 }

@@ -12,7 +12,7 @@
   <body class="fs-primary">
     <!-- HEADER -->
     <header>
-      <div class="container upper">
+      <div class="upper mx-20">
         <div class="grid">
           <div class="control-1 y-center">
             <img class="main-logo" src="./images/logo.svg" alt="music box logo">
@@ -31,71 +31,69 @@
       </div>
     </header>
     <!-- BANNER -->
-    <section id ="page-description" class="banner bg-banner art-banner">
-      <div class="container">
-          <h1 class="upper">morten harket</h1>
-          <p>24 875 поклонников</p>
-        <div class="flex">
-          <button type="submit" class="btn mix-btn upper">
-              <img src="./images/play-button.svg" class="play-icon" alt="play icon">
-              <span>микс</span>
-          </button>
-          <button type="submit" class="btn favorite-btn upper">
-              <img src="./images/heart.svg" class="favorite-icon" alt="favorite icon">
-              <span>в избранное</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <main class="bg-black">
-      <!-- POPULAR -->
-      <section id="page-popular-track">
-        <div class="container">
-          <h2 class="upper">популярные треки</h2>
-          <div class="grid">
-            <img src="./images/Wild Seed.png" class="cover cover-1" alt="album cover">
-            <div class="track track-1">
-              <div class="upper">spanish step</div>
-              <div class="cap">morten harket</div>
-            </div>
-            <span class="duration duration-1">4:07</span>
-            <img src="./images/Brother.png" class="cover cover-2" alt="album cover">
-            <div class="track track-2">
-              <div class="upper">brother</div>
-              <div class="cap">morten harket</div>
-            </div>
-            <span class="duration duration-2">5:05</span>
-            <img src="./images/Letter from Egypt.png" class="cover cover-3" alt="album cover">
-            <div class="track track-3">
-              <div class="upper">darkspace</div>
-              <div class="cap">morten harket</div>
-            </div>
-            <span class="duration duration-3">3:45</span>
-            <img src="./images/Letter from Egypt.png" class="cover cover-4" alt="album cover">
-            <div class="track track-4">
-              <div class="upper">with you - with me</div>
-              <div class="cap">morten harket</div>
-            </div>
-            <span class="duration duration-4">3:48</span>
-            <img src="./images/Wild Seed.png" class="cover cover-5" alt="album cover">
-            <div class="track track-5">
-              <div class="upper">brodsky tune</div>
-              <div class="cap">morten harket</div>
-            </div>
-            <span class="duration duration-5">4:24</span>
-            <img src="./images/Out of My Hands.png" class="cover cover-6" alt="album cover">
-            <div class="track track-6">
-              <div class="upper">burn money burn</div>
-              <div class="cap">morten harket</div>
-            </div>
-            <span class="duration duration-6">3:52</span>
+    <div class="banner bg-banner art-banner flex">
+      <section id ="page-description" class="mx-20">
+            <h1 class="upper">morten harket</h1>
+            <p>24 875 поклонников</p>
+          <div class="flex">
+            <button type="submit" class="btn mix-btn upper">
+                <img src="./images/play-button.svg" class="play-icon" alt="play icon">
+                <span>микс</span>
+            </button>
+            <button type="submit" class="btn favorite-btn upper">
+                <img src="./images/heart.svg" class="favorite-icon" alt="favorite icon">
+                <span>в избранное</span>
+            </button>
           </div>
-        </div>
       </section>
+    </div>
+
+    <main class="bg-black flex flex-column">
+      <!-- POPULAR -->
+        <section id="page-popular-track" class="mx-20">
+            <h2 class="upper">популярные треки</h2>
+            <div class="grid">
+              <img src="./images/Wild Seed.png" class="cover cover-1" alt="album cover">
+              <div class="track track-1">
+                <div class="upper">spanish step</div>
+                <div class="cap">morten harket</div>
+              </div>
+              <span class="duration duration-1">4:07</span>
+              <img src="./images/Brother.png" class="cover cover-2" alt="album cover">
+              <div class="track track-2">
+                <div class="upper">brother</div>
+                <div class="cap">morten harket</div>
+              </div>
+              <span class="duration duration-2">5:05</span>
+              <img src="./images/Letter from Egypt.png" class="cover cover-3" alt="album cover">
+              <div class="track track-3">
+                <div class="upper">darkspace</div>
+                <div class="cap">morten harket</div>
+              </div>
+              <span class="duration duration-3">3:45</span>
+              <img src="./images/Letter from Egypt.png" class="cover cover-4" alt="album cover">
+              <div class="track track-4">
+                <div class="upper">with you - with me</div>
+                <div class="cap">morten harket</div>
+              </div>
+              <span class="duration duration-4">3:48</span>
+              <img src="./images/Wild Seed.png" class="cover cover-5" alt="album cover">
+              <div class="track track-5">
+                <div class="upper">brodsky tune</div>
+                <div class="cap">morten harket</div>
+              </div>
+              <span class="duration duration-5">4:24</span>
+              <img src="./images/Out of My Hands.png" class="cover cover-6" alt="album cover">
+              <div class="track track-6">
+                <div class="upper">burn money burn</div>
+                <div class="cap">morten harket</div>
+              </div>
+              <span class="duration duration-6">3:52</span>
+            </div>
+        </section>
   
       <!-- DISCOGRAPHY -->
-      <section id="page-discography" class="catalogue">
-        <div class="container">
+      <section id="page-discography" class="catalogue mx-20">
           <h2 class="upper">дискография</h2>
           <div class="grid">
             <div class="catalogue-item">
@@ -153,12 +151,10 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
   
       <!-- SIMILAR -->
-      <section id="page-similar" class="catalogue">
-        <div class="container">
+      <section id="page-similar" class="catalogue mx-20">
           <h2 class="upper">похожие исполнители</h2>
           <div class="grid">
             <div class="catalogue-item">
@@ -234,15 +230,13 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="bg-gradient">
       <section class="footer-up">
-        <div class="container">
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap mx-20">
               <div class="submenu">
                 <h2 class="upper">о нас</h2>
                 <ul>
@@ -279,12 +273,10 @@
                   </ul>
               </div>
           </div>
-        </div>
       </section>
-      
+      <hr>
       <section class="footer-down">
-        <div class="container">
-          <div class="submenu">
+          <div class="submenu mx-20">
             <ul>
               <li><a href="#"></a>Магазин</li>
               <li><a href="#"></a>Обслуживание</li>
@@ -293,7 +285,6 @@
               <li><a href="#"></a>Контакты</li>
             </ul>
           </div>
-        </div>
       </section>
     </footer>    
   </body>

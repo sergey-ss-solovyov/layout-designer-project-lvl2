@@ -2,6 +2,7 @@
 @import "../abstracts/mixins";
 
 #page-app {
+  max-width: 374px;
   padding: 100px 0;
 
   h2 {
@@ -11,30 +12,22 @@
     @include get-h2-mobile-style;
   }
 
-  .wrapper {
-    max-width: 374px;
-    margin: 0 auto;
+  .flex {
+    flex-direction: column;
 
-    .flex {
-      display: flex;
-      flex-direction: column;
+    img {
+      width: 100%;
+      margin-bottom: 16px;
+    }
 
-      img {
-        display: block;
-        order: 1;
-        margin: auto;
-        width: 100%;
-      }
+    .app-description {
+      position: relative;
+      top: -14px;
+      order: 2;
+      margin: 0 auto;
 
-      .app-description {
-        position: relative;
-        top: -14px;
-        order: 2;
-        margin: 0 auto;
-
-        .btn {
-          margin-top: 16px;
-        }
+      .btn {
+        margin-top: 16px;
       }
     }
   }
@@ -42,28 +35,26 @@
 
 @media (min-width: 843px) {
   #page-app {
+    max-width: 1200px;
+
     h2 {
       @include get-h2-desktop-style;
     }
 
-    .wrapper {
+    .flex {
+      flex-direction: row;
       max-width: 100%;
 
-      .flex {
-        flex-direction: row;
-        max-width: 100%;
+      .app-description {
+        top: 0;
+        order: 1;
+        margin: 0 144px 0 0;
+      }
 
-        .app-description {
-          top: 0;
-          order: 1;
-          margin: 0;
-          max-width: 600px;
-        }
-
-        img {
-          order: 2;
-          max-width: 333px;
-        }
+      img {
+        order: 2;
+        max-width: 333px;
+        margin-bottom: 0;
       }
     }
   }

@@ -24,10 +24,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  margin: 0 20px;
-}
-
 .upper {
   text-transform: uppercase;
 }
@@ -42,6 +38,11 @@ a {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
@@ -60,17 +61,10 @@ li {
   color: #f89202;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    margin: 0 100px;
-  }
+.mx-20 {
+  margin: 0 20px;
 }
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
+
 @font-face {
   font-family: "Roboto-Bold";
   src: url("../../fonts/Roboto-Bold.ttf");
@@ -199,9 +193,12 @@ footer h2 {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
+footer hr {
+  margin: 0;
+  border: 1px solid #e0e0e0;
+}
 footer .footer-down {
   padding: 40px 0 48px 0;
-  border-top: 1px solid #e0e0e0;
 }
 footer .footer-down .submenu li + li {
   margin-top: 16px;
@@ -231,13 +228,18 @@ footer .footer-up .submenu .icons li + li {
     margin: 0 0 0 15px;
   }
 }
+@media (min-width: 1440px) {
+  footer .footer-up,
+footer .footer-down {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
 header {
   position: absolute;
   top: 27px;
   left: 0;
   right: 0;
-}
-header .container {
   font: normal 700 11px/1.15 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
@@ -339,6 +341,12 @@ header input {
     justify-self: end;
   }
 }
+@media (min-width: 1440px) {
+  header {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
 .banner h1 {
   font: normal 700 30px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
@@ -352,7 +360,7 @@ header input {
   background-position-x: center;
 }
 .banner.home-banner {
-  padding: 250px 0 200px 0;
+  padding: 250px 20px 200px 20px;
   background-image: url("../../src/images/banner.png");
 }
 .banner.home-banner h1,
@@ -386,8 +394,14 @@ header input {
   color: #fff;
 }
 .banner.art-banner {
-  padding: 225px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   background-image: url("../../src/images/Morten Harket.png");
+}
+.banner.art-banner #page-description {
+  padding: 225px 0;
+  width: 1200px;
 }
 .banner.art-banner h1 {
   margin: 0 0 16px 0;
@@ -446,17 +460,17 @@ header input {
   }
 }
 @media (min-width: 807px) {
-  .banner.home-banner .container h1 {
+  .banner.home-banner h1 {
     font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
   }
-  .banner.home-banner .container h2 {
+  .banner.home-banner h2 {
     margin-bottom: 32px;
     font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
     font-stretch: condensed;
   }
 }
 @media (min-width: 807px) {
-  .banner.art-banner .container h1 {
+  .banner.art-banner h1 {
     font: normal 700 60px/1.5 "Roboto-Bold", "sans-serif";
   }
 }
@@ -589,93 +603,90 @@ header input {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-#page-popular-track .container {
-  width: inherit;
-}
-#page-popular-track .container .grid {
+#page-popular-track .grid {
   display: grid;
   grid-template-columns: 55px 140px auto;
   grid-template-rows: repeat(6, 55px);
   gap: 25px;
 }
-#page-popular-track .container .grid .cover {
+#page-popular-track .grid .cover {
   width: 55px;
   height: 55px;
 }
-#page-popular-track .container .grid .track,
-#page-popular-track .container .grid .duration {
+#page-popular-track .grid .track,
+#page-popular-track .grid .duration {
   align-self: center;
 }
-#page-popular-track .container .grid .track div:nth-child(1) {
+#page-popular-track .grid .track div:nth-child(1) {
   font: normal 700 12.8px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-#page-popular-track .container .grid .track div:nth-child(2),
-#page-popular-track .container .grid .duration {
+#page-popular-track .grid .track div:nth-child(2),
+#page-popular-track .grid .duration {
   font: normal 400 12.8px/1.5 "Roboto-Regular", "sans-serif";
   font-stretch: condensed;
 }
-#page-popular-track .container .grid .duration {
+#page-popular-track .grid .duration {
   text-align: end;
 }
 
 @media (min-width: 650px) {
-  #page-popular-track .container .grid {
+  #page-popular-track .grid {
     grid-template-columns: 55px 140px auto 55px 140px auto;
     grid-template-rows: repeat(3, 55px);
     gap: 25px;
   }
-  #page-popular-track .container .grid .cover-2 {
+  #page-popular-track .grid .cover-2 {
     grid-column: 1/span 1;
     grid-row: 2/span 1;
   }
-  #page-popular-track .container .grid .track-2 {
+  #page-popular-track .grid .track-2 {
     grid-column: 2/span 1;
     grid-row: 2/span 1;
   }
-  #page-popular-track .container .grid .duration-2 {
+  #page-popular-track .grid .duration-2 {
     grid-column: 3/span 1;
     grid-row: 2/span 1;
   }
-  #page-popular-track .container .grid .cover-3 {
+  #page-popular-track .grid .cover-3 {
     grid-column: 1/span 1;
     grid-row: 3/span 1;
   }
-  #page-popular-track .container .grid .track-3 {
+  #page-popular-track .grid .track-3 {
     grid-column: 2/span 1;
     grid-row: 3/span 1;
   }
-  #page-popular-track .container .grid .duration-3 {
+  #page-popular-track .grid .duration-3 {
     grid-column: 3/span 1;
     grid-row: 3/span 1;
   }
-  #page-popular-track .container .grid .cover-4 {
+  #page-popular-track .grid .cover-4 {
     grid-column: 4/span 1;
     grid-row: 1/span 1;
   }
-  #page-popular-track .container .grid .track-4 {
+  #page-popular-track .grid .track-4 {
     grid-column: 5/span 1;
     grid-row: 1/span 1;
   }
-  #page-popular-track .container .grid .duration-4 {
+  #page-popular-track .grid .duration-4 {
     grid-column: 6/span 1;
     grid-row: 1/span 1;
   }
-  #page-popular-track .container .grid .cover-5 {
+  #page-popular-track .grid .cover-5 {
     grid-column: 4/span 1;
     grid-row: 2/span 1;
   }
-  #page-popular-track .container .grid .track-5 {
+  #page-popular-track .grid .track-5 {
     grid-column: 5/span 1;
     grid-row: 2/span 1;
   }
-  #page-popular-track .container .grid .duration-5 {
+  #page-popular-track .grid .duration-5 {
     grid-column: 6/span 1;
     grid-row: 2/span 1;
   }
-  #page-popular-track .container .grid .duration-1,
-#page-popular-track .container .grid .duration-2,
-#page-popular-track .container .grid .duration-3 {
+  #page-popular-track .grid .duration-1,
+#page-popular-track .grid .duration-2,
+#page-popular-track .grid .duration-3 {
     margin-right: 25px;
   }
 }
@@ -686,7 +697,10 @@ header input {
   }
 }
 @media (min-width: 1440px) {
-  .grid {
+  #page-popular-track {
+    width: 1200px;
+  }
+  #page-popular-track .grid {
     margin-right: 50px;
   }
 }
@@ -701,7 +715,7 @@ header input {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-.catalogue .container .grid {
+.catalogue .grid {
   display: grid;
   grid-template-columns: repeat(2, 137px);
   grid-template-rows: repeat(3, 1fr);
@@ -709,23 +723,23 @@ header input {
 }
 
 @media (min-width: 375px) {
-  .catalogue .container .grid {
+  .catalogue .grid {
     gap: 25px 50px;
   }
 }
 @media (min-width: 414px) {
-  .catalogue .container .grid {
+  .catalogue .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 590px) {
-  .catalogue .container .grid {
+  .catalogue .grid {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(2, 1fr);
   }
 }
 @media (min-width: 890px) {
-  .catalogue .container .grid {
+  .catalogue .grid {
     grid-template-columns: repeat(3, 250px);
   }
 }
@@ -736,7 +750,10 @@ header input {
   }
 }
 @media (min-width: 1350px) {
-  .catalogue .container .grid {
+  .catalogue {
+    width: 1200px;
+  }
+  .catalogue .grid {
     grid-template-columns: repeat(4, 250px);
   }
 }
@@ -840,6 +857,7 @@ header input {
   }
 }
 #page-app {
+  max-width: 374px;
   padding: 100px 0;
 }
 #page-app h2 {
@@ -848,51 +866,44 @@ header input {
   font: normal 700 18px/1.5 "Roboto-Bold", "sans-serif";
   font-stretch: condensed;
 }
-#page-app .wrapper {
-  max-width: 374px;
-  margin: 0 auto;
-}
-#page-app .wrapper .flex {
-  display: flex;
+#page-app .flex {
   flex-direction: column;
 }
-#page-app .wrapper .flex img {
-  display: block;
-  order: 1;
-  margin: auto;
+#page-app .flex img {
   width: 100%;
+  margin-bottom: 16px;
 }
-#page-app .wrapper .flex .app-description {
+#page-app .flex .app-description {
   position: relative;
   top: -14px;
   order: 2;
   margin: 0 auto;
 }
-#page-app .wrapper .flex .app-description .btn {
+#page-app .flex .app-description .btn {
   margin-top: 16px;
 }
 
 @media (min-width: 843px) {
+  #page-app {
+    max-width: 1200px;
+  }
   #page-app h2 {
     font: normal 700 38px/1.5 "Roboto-Bold", "sans-serif";
     font-stretch: condensed;
   }
-  #page-app .wrapper {
-    max-width: 100%;
-  }
-  #page-app .wrapper .flex {
+  #page-app .flex {
     flex-direction: row;
     max-width: 100%;
   }
-  #page-app .wrapper .flex .app-description {
+  #page-app .flex .app-description {
     top: 0;
     order: 1;
-    margin: 0;
-    max-width: 600px;
+    margin: 0 144px 0 0;
   }
-  #page-app .wrapper .flex img {
+  #page-app .flex img {
     order: 2;
     max-width: 333px;
+    margin-bottom: 0;
   }
 }
 
