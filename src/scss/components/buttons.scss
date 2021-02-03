@@ -116,3 +116,12 @@
     grid-row: 2 / 2;
   }
 }
+
+@media (min-width: 807px) {
+  .art-banner {
+    .btn + .btn {
+      margin-top: 0;
+      margin-left: 24px;
+    }
+  }
+}

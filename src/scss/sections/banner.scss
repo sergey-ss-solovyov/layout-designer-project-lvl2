@@ -164,8 +164,22 @@
 // ------ ARTIST MEDIA ------
 @media (min-width: 807px) {
   .banner.art-banner {
-    h1 {
-      @include get-font-styles(60px, 700);
+    max-height: 713px;
+
+    &.bg-banner {
+      background-position-x: -533px;
+    }
+
+    #page-description {
+      padding: 249px 0;
+
+      h1 {
+        @include get-font-styles(60px, 700);
+      }
+
+      .flex {
+        flex-direction: row;
+      }
     }
   }
 }

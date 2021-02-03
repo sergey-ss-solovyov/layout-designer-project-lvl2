@@ -181,6 +181,12 @@ li {
     grid-row: 2/2;
   }
 }
+@media (min-width: 807px) {
+  .art-banner .btn + .btn {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+}
 footer.bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -465,8 +471,20 @@ header input {
   }
 }
 @media (min-width: 807px) {
-  .banner.art-banner h1 {
+  .banner.art-banner {
+    max-height: 713px;
+  }
+  .banner.art-banner.bg-banner {
+    background-position-x: -533px;
+  }
+  .banner.art-banner #page-description {
+    padding: 249px 0;
+  }
+  .banner.art-banner #page-description h1 {
     font: normal 700 60px/1.5 "Roboto", "sans-serif", sans-serif;
+  }
+  .banner.art-banner #page-description .flex {
+    flex-direction: row;
   }
 }
 #page-pricing {
