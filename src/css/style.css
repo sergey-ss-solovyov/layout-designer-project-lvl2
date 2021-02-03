@@ -126,8 +126,8 @@ li {
 }
 
 .download-btn {
-  width: 129px;
-  height: 51px;
+  width: 131px;
+  height: 53px;
   border: 1px solid #95390c;
   border-radius: 2rem;
   background-color: #95390c;
@@ -199,7 +199,7 @@ footer .footer-down .submenu li + li {
   margin-top: 16px;
 }
 footer .footer-up {
-  padding: 32px 0 66px 0;
+  padding: 32px 0 70px 0;
 }
 footer .footer-up .submenu {
   margin: 30px 30px 0 0;
@@ -225,6 +225,13 @@ footer .footer-up .submenu .icons li + li {
 footer .footer-down {
     max-width: 1240px;
     margin: 0 auto;
+  }
+  footer .footer-up .submenu {
+    width: 250px;
+    margin: 30px 0 0 0;
+  }
+  footer .footer-up .submenu + .submenu {
+    margin-left: 60px;
   }
 }
 header {
@@ -839,10 +846,10 @@ header input {
 }
 #page-app {
   max-width: 374px;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 #page-app h2 {
-  margin-bottom: 48px;
+  margin-bottom: 62px;
   text-align: center;
   font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
@@ -862,10 +869,10 @@ header input {
   font-size: 15.8px;
 }
 #page-app .flex .app-description p + p {
-  margin-top: 17px;
+  margin-top: 19px;
 }
 #page-app .flex .app-description .btn {
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 @media (min-width: 843px) {
@@ -888,6 +895,18 @@ header input {
     order: 2;
     max-width: 333px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  #page-app h2 {
+    margin-bottom: 0px;
+  }
+  #page-app .flex .app-description {
+    margin-top: 62px;
+  }
+  #page-app .flex img {
+    margin-top: 47px;
+    margin-right: 123px;
   }
 }
 
