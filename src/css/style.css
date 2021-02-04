@@ -496,7 +496,7 @@ header input {
   padding: 100px 20px 0 20px;
 }
 #page-pricing h2 {
-  margin-bottom: 47px;
+  margin-bottom: 48px;
   text-align: center;
   font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
@@ -540,7 +540,7 @@ header input {
   font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .flex .card-1 {
-  max-width: 367px;
+  max-width: 365px;
   background-image: url(../images/subscribe_1.png);
 }
 #page-pricing .flex .card-2 {
@@ -548,7 +548,7 @@ header input {
   background-image: url(../images/subscribe_2.png);
 }
 #page-pricing .flex .card-3 {
-  max-width: 367px;
+  max-width: 365px;
   background-image: url(../images/subscribe_3.png);
 }
 
@@ -749,11 +749,10 @@ header input {
 #page-news .grid .singer img {
   display: block;
   margin: auto;
-  width: 100%;
-  max-width: 374px;
+  width: 374px;
 }
 #page-news .grid .singer .news-card {
-  max-width: 374px;
+  width: 374px;
   margin: 0 auto;
 }
 #page-news .grid .singer .news-card .description {
@@ -787,10 +786,10 @@ header input {
     font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   #page-news .grid .singer img {
-    max-width: 575px;
+    width: 575px;
   }
   #page-news .grid .singer .news-card {
-    max-width: 575px;
+    width: 575px;
   }
   #page-news .grid .singer .news-card .album-title {
     font: normal 400 30px/1.5 "Roboto", "sans-serif", sans-serif;
@@ -848,17 +847,20 @@ header input {
 }
 #page-app .flex .app-description {
   position: relative;
+  top: -18px;
+  width: 600px;
   order: 2;
   margin: 0 auto;
 }
 #page-app .flex .app-description p {
-  font-size: 15.8px;
+  font-size: 15px;
+  letter-spacing: -0.19px;
 }
 #page-app .flex .app-description p + p {
-  margin-top: 19px;
+  margin-top: 17px;
 }
 #page-app .flex .app-description .btn {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 @media (min-width: 843px) {
@@ -888,10 +890,10 @@ header input {
     margin-bottom: 0;
   }
   #page-app .flex .app-description {
-    margin-top: 62px;
+    margin-top: 63px;
   }
   #page-app .flex img {
-    margin-top: 47px 123px 2px 0;
+    margin: 47px 123px 2px 0;
   }
 }
 

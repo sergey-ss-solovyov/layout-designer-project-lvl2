@@ -22,20 +22,22 @@
 
     .app-description {
       position: relative;
-      // top: -18px;
+      top: -18px;
+      width: 600px;
       order: 2;
       margin: 0 auto;
 
       p {
-        font-size: 15.8px;
+        font-size: 15px;
+        letter-spacing: -0.19px;
       }
 
       p + p {
-        margin-top: 19px;
+        margin-top: 17px;
       }
 
       .btn {
-        margin-top: 18px;
+        margin-top: 16px;
       }
     }
   }
@@ -77,11 +79,11 @@
 
     .flex {
       .app-description {
-        margin-top: 62px;
+        margin-top: 63px;
       }
 
       img {
-        margin-top: 47px 123px 2px 0;
+        margin: 47px 123px 2px 0;
       }
     }
   }

@@ -28,12 +28,12 @@
       img {
         display: block;
         margin: auto;
-        width: 100%;
-        max-width: 374px;
+        // width: 100%;
+        width: 374px;
       }
 
       .news-card {
-        max-width: 374px;
+        width: 374px;
         margin: 0 auto;
 
         .description {
@@ -86,11 +86,11 @@
     .grid {
       .singer {
         img {
-          max-width: 575px;
+          width: 575px;
         }
 
         .news-card {
-          max-width: 575px;
+          width: 575px;
 
           .album-title {
             @include get-font-styles(30px);
