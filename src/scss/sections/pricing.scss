@@ -22,7 +22,7 @@
       margin: 0 0 48px 0;
       text-align: center;
       background-size: cover;
-      border: 0.1px solid get-color('black');
+      border: 1px solid get-color('black');
       border-radius: 15px;
 
       h3 {
@@ -101,7 +101,7 @@
 
         .terms {
           margin-bottom: 60px;
-          padding: 0 19px;
+          padding: 0 20px;
           letter-spacing: -0.3px;
         }
       }
@@ -120,6 +120,7 @@
 
     .common-terms {
       max-width: 1200px;
+      margin-top: -7px;
       margin-right: auto;
       margin-left: auto;
     }

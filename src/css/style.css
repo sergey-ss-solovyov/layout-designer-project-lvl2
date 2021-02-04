@@ -509,7 +509,7 @@ header input {
   margin: 0 0 48px 0;
   text-align: center;
   background-size: cover;
-  border: 0.1px solid #08020d;
+  border: 1px solid #08020d;
   border-radius: 15px;
 }
 #page-pricing .flex .card h3 {
@@ -566,7 +566,7 @@ header input {
   }
   #page-pricing .flex .card .terms {
     margin-bottom: 60px;
-    padding: 0 19px;
+    padding: 0 20px;
     letter-spacing: -0.3px;
   }
   #page-pricing .flex .card-1 {
@@ -580,6 +580,7 @@ header input {
   }
   #page-pricing .common-terms {
     max-width: 1200px;
+    margin-top: -7px;
     margin-right: auto;
     margin-left: auto;
   }
