@@ -1,11 +1,9 @@
 .catalogue {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 
   &#page-similar {
-    // padding: 100px 0;
-
     .catalogue-info {
-      text-align: center;      
+      text-align: center;
     }
   }
 
@@ -68,6 +66,7 @@
 @media (min-width: 1350px) {
   .catalogue {
     width: 1200px;
+    padding: 100px 120px 0 120px;
 
     .grid {
       grid-template-columns: repeat(4, 250px);

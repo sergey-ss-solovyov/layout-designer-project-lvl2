@@ -1,5 +1,5 @@
 #page-popular-track {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 
   h2 {
     margin-bottom: 48px;
@@ -41,9 +41,9 @@
 @media (min-width: 650px) {
   #page-popular-track {
     .grid {
-      grid-template-columns: 55px 140px auto;
+      grid-template-columns: 55px 140px auto 55px 140px auto;
       grid-template-rows: repeat(3, 55px);
-      gap: 25px;
+      gap: 25px 15px;
 
       .cover-2 {
         grid-column: 1 / span 1;
@@ -108,7 +108,7 @@
       .duration-1,
       .duration-2,
       .duration-3 {
-        margin-right: 25px;
+        margin-right: 34px;
       }
     }
   }
@@ -125,6 +125,7 @@
 @media (min-width: 1440px) {
   #page-popular-track {
     width: 1200px;
+    padding: 100px 120px 0 120px;
 
     .grid {
       margin-right: 50px;

@@ -62,7 +62,7 @@
     background-image: url("../images/Morten Harket.png");
 
     #page-description {
-      padding: 225px 0;
+      padding: 225px 20px;
       width: 1200px;
     }
 
@@ -171,7 +171,7 @@
     }
 
     #page-description {
-      padding: 249px 0;
+      padding: 249px 20px;
 
       h1 {
         @include get-font-styles(60px, 700);
@@ -180,6 +180,14 @@
       .flex {
         flex-direction: row;
       }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner.art-banner {
+    #page-description {
+      padding: 249px 120px;
     }
   }
 }

@@ -402,7 +402,7 @@ header input {
   background-image: url("../images/Morten Harket.png");
 }
 .banner.art-banner #page-description {
-  padding: 225px 0;
+  padding: 225px 20px;
   width: 1200px;
 }
 .banner.art-banner h1 {
@@ -478,7 +478,7 @@ header input {
     background-position-x: -533px;
   }
   .banner.art-banner #page-description {
-    padding: 249px 0;
+    padding: 249px 20px;
   }
   .banner.art-banner #page-description h1 {
     font: normal 700 60px/1.5 "Roboto", "sans-serif", sans-serif;
@@ -487,8 +487,13 @@ header input {
     flex-direction: row;
   }
 }
+@media (min-width: 1440px) {
+  .banner.art-banner #page-description {
+    padding: 249px 120px;
+  }
+}
 #page-pricing {
-  padding: 104px 20px 0 20px;
+  padding: 99px 20px 0 20px;
 }
 #page-pricing h2 {
   margin-bottom: 47px;
@@ -566,7 +571,7 @@ header input {
   }
 }
 #page-popular-track {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 }
 #page-popular-track h2 {
   margin-bottom: 48px;
@@ -599,9 +604,9 @@ header input {
 
 @media (min-width: 650px) {
   #page-popular-track .grid {
-    grid-template-columns: 55px 140px auto;
+    grid-template-columns: 55px 140px auto 55px 140px auto;
     grid-template-rows: repeat(3, 55px);
-    gap: 25px;
+    gap: 25px 15px;
   }
   #page-popular-track .grid .cover-2 {
     grid-column: 1/span 1;
@@ -654,7 +659,7 @@ header input {
   #page-popular-track .grid .duration-1,
 #page-popular-track .grid .duration-2,
 #page-popular-track .grid .duration-3 {
-    margin-right: 25px;
+    margin-right: 34px;
   }
 }
 @media (min-width: 1024px) {
@@ -665,13 +670,14 @@ header input {
 @media (min-width: 1440px) {
   #page-popular-track {
     width: 1200px;
+    padding: 100px 120px 0 120px;
   }
   #page-popular-track .grid {
     margin-right: 50px;
   }
 }
 .catalogue {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 }
 .catalogue#page-similar .catalogue-info {
   text-align: center;
@@ -717,13 +723,14 @@ header input {
 @media (min-width: 1350px) {
   .catalogue {
     width: 1200px;
+    padding: 100px 120px 0 120px;
   }
   .catalogue .grid {
     grid-template-columns: repeat(4, 250px);
   }
 }
 #page-news {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 }
 #page-news h2 {
   margin-bottom: 48px;
@@ -792,6 +799,9 @@ header input {
   }
 }
 @media (min-width: 1440px) {
+  #page-news {
+    padding: 100px 120px;
+  }
   #page-news .grid {
     display: grid;
     grid-template-areas: "singer-1" "singer-2";
@@ -827,10 +837,10 @@ header input {
 }
 #page-app {
   max-width: 374px;
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 }
 #page-app h2 {
-  margin-bottom: 62px;
+  margin-bottom: 48px;
   text-align: center;
   font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
@@ -838,11 +848,11 @@ header input {
   flex-direction: column;
 }
 #page-app .flex img {
-  width: 100%;
+  max-width: 333px;
+  margin: 0 auto 16px auto;
 }
 #page-app .flex .app-description {
   position: relative;
-  top: -18px;
   order: 2;
   margin: 0 auto;
 }
@@ -879,6 +889,9 @@ header input {
   }
 }
 @media (min-width: 1440px) {
+  #page-app {
+    padding: 100px 120px;
+  }
   #page-app h2 {
     margin-bottom: 0px;
   }
@@ -886,8 +899,7 @@ header input {
     margin-top: 62px;
   }
   #page-app .flex img {
-    margin-top: 47px;
-    margin-right: 123px;
+    margin-top: 47px 123px 2px 0;
   }
 }
 

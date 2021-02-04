@@ -3,10 +3,10 @@
 
 #page-app {
   max-width: 374px;
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 
   h2 {
-    margin-bottom: 62px;
+    margin-bottom: 48px;
     text-align: center;
 
     @include get-h2-mobile-style;
@@ -16,12 +16,13 @@
     flex-direction: column;
 
     img {
-      width: 100%;
+      max-width: 333px;
+      margin: 0 auto 16px auto;
     }
 
     .app-description {
       position: relative;
-      top: -18px;
+      // top: -18px;
       order: 2;
       margin: 0 auto;
 
@@ -69,19 +70,19 @@
 
 @media (min-width: 1440px) {
   #page-app {
+    padding: 100px 120px;
+
     h2 {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     .flex {
-
       .app-description {
         margin-top: 62px;
       }
-      
+
       img {
-        margin-top: 47px;
-        margin-right: 123px;
+        margin-top: 47px 123px 2px 0;
       }
     }
   }

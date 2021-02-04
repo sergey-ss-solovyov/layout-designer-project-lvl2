@@ -2,7 +2,7 @@
 @import "../abstracts/mixins";
 
 #page-news {
-  padding: 100px 0 0 0;
+  padding: 100px 20px 0 20px;
 
   h2 {
     margin-bottom: 48px;
@@ -36,6 +36,10 @@
         max-width: 374px;
         margin: 0 auto;
 
+        .description {
+          color: get-color('dark-gray');
+        }
+
         &.news-card-1 {
           .description {
             margin-bottom: 24px;
@@ -51,10 +55,6 @@
         .album-title {
           margin-top: 50px;
           margin-bottom: 16px;
-        }
-
-        .description {
-          color: get-color('dark-gray');
         }
 
         .flex {
@@ -103,6 +103,8 @@
 
 @media (min-width: 1440px) {
   #page-news {
+    padding: 100px 120px;
+
     .grid {
       display: grid;
       grid-template-areas: "singer-1" "singer-2";
