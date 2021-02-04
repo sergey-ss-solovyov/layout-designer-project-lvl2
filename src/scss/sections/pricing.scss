@@ -17,7 +17,7 @@
 
   .flex {
     .card {
-      width: 100%;
+      // width: 100%;
       min-width: 210px;
       margin: 0 0 48px 0;
       text-align: center;
@@ -56,24 +56,24 @@
 
       .terms {
         margin-bottom: 64px;
-        padding: 0 25px;
+        padding: 0 15px;
 
         @include get-font-styles(12.8px);
       }
     }
 
     .card-1 {
-      max-width: 365px;
+      max-width: 372px;
       background-image: url(../images/subscribe_1.png);
     }
 
     .card-2 {
-      max-width: 365px;
+      max-width: 372px;
       background-image: url(../images/subscribe_2.png);
     }
 
     .card-3 {
-      max-width: 365px;
+      max-width: 372px;
       background-image: url(../images/subscribe_3.png);
     }
   }
@@ -91,11 +91,23 @@
   #page-pricing {
     .flex {
       justify-content: space-between;
-
+      
       .card {
         h3 {
           @include get-font-styles(24px, 400, 45/24);
         }
+      }
+
+      .card-1 {
+        max-width: 365px;
+      }
+
+      .card-2 {
+        max-width: 365px;
+      }
+
+      .card-3 {
+        max-width: 365px;
       }
     }
 

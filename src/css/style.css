@@ -505,7 +505,6 @@ header input {
   text-align: center;
 }
 #page-pricing .flex .card {
-  width: 100%;
   min-width: 210px;
   margin: 0 0 48px 0;
   text-align: center;
@@ -536,19 +535,19 @@ header input {
 }
 #page-pricing .flex .card .terms {
   margin-bottom: 64px;
-  padding: 0 25px;
+  padding: 0 15px;
   font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .flex .card-1 {
-  max-width: 365px;
+  max-width: 372px;
   background-image: url(../images/subscribe_1.png);
 }
 #page-pricing .flex .card-2 {
-  max-width: 365px;
+  max-width: 372px;
   background-image: url(../images/subscribe_2.png);
 }
 #page-pricing .flex .card-3 {
-  max-width: 365px;
+  max-width: 372px;
   background-image: url(../images/subscribe_3.png);
 }
 
@@ -563,6 +562,15 @@ header input {
   }
   #page-pricing .flex .card h3 {
     font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
+  }
+  #page-pricing .flex .card-1 {
+    max-width: 365px;
+  }
+  #page-pricing .flex .card-2 {
+    max-width: 365px;
+  }
+  #page-pricing .flex .card-3 {
+    max-width: 365px;
   }
   #page-pricing .common-terms {
     max-width: 1200px;
