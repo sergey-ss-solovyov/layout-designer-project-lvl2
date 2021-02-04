@@ -94,10 +94,17 @@
       
       .card {
         h3 {
+          margin: 21px 0 178px 0;
+
           @include get-font-styles(24px, 400, 45/24);
         }
-      }
 
+        .terms {
+          margin-bottom: 60px;
+          padding: 0 19px;
+          letter-spacing: -0.3px;
+        }
+      }
       .card-1 {
         max-width: 365px;
       }

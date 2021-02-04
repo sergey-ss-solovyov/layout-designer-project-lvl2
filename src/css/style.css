@@ -561,7 +561,13 @@ header input {
     justify-content: space-between;
   }
   #page-pricing .flex .card h3 {
+    margin: 21px 0 178px 0;
     font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
+  }
+  #page-pricing .flex .card .terms {
+    margin-bottom: 60px;
+    padding: 0 19px;
+    letter-spacing: -0.3px;
   }
   #page-pricing .flex .card-1 {
     max-width: 365px;
