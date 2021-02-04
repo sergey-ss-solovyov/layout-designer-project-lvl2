@@ -493,7 +493,7 @@ header input {
   }
 }
 #page-pricing {
-  padding: 99px 20px 0 20px;
+  padding: 100px 20px 0 20px;
 }
 #page-pricing h2 {
   margin-bottom: 47px;
@@ -670,7 +670,6 @@ header input {
 @media (min-width: 1440px) {
   #page-popular-track {
     width: 1200px;
-    padding: 100px 120px 0 120px;
   }
   #page-popular-track .grid {
     margin-right: 50px;
@@ -723,7 +722,6 @@ header input {
 @media (min-width: 1350px) {
   .catalogue {
     width: 1200px;
-    padding: 100px 120px 0 120px;
   }
   .catalogue .grid {
     grid-template-columns: repeat(4, 250px);
@@ -758,6 +756,9 @@ header input {
   max-width: 374px;
   margin: 0 auto;
 }
+#page-news .grid .singer .news-card .description {
+  color: #cacaca;
+}
 #page-news .grid .singer .news-card.news-card-1 .description {
   margin-bottom: 24px;
 }
@@ -767,9 +768,6 @@ header input {
 #page-news .grid .singer .news-card .album-title {
   margin-top: 50px;
   margin-bottom: 16px;
-}
-#page-news .grid .singer .news-card .description {
-  color: #cacaca;
 }
 #page-news .grid .singer .news-card .flex {
   margin-bottom: 47.5px;
@@ -799,9 +797,6 @@ header input {
   }
 }
 @media (min-width: 1440px) {
-  #page-news {
-    padding: 100px 120px;
-  }
   #page-news .grid {
     display: grid;
     grid-template-areas: "singer-1" "singer-2";
@@ -889,11 +884,8 @@ header input {
   }
 }
 @media (min-width: 1440px) {
-  #page-app {
-    padding: 100px 120px;
-  }
   #page-app h2 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   #page-app .flex .app-description {
     margin-top: 62px;
