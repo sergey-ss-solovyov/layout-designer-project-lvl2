@@ -496,12 +496,12 @@ header input {
   padding: 100px 20px 0 20px;
 }
 #page-pricing h2 {
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   text-align: center;
   font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .common-terms {
-  margin-top: -10px;
+  margin-top: -8px;
   text-align: center;
 }
 #page-pricing .flex .card {
@@ -531,7 +531,7 @@ header input {
   font: normal 400 32px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .flex .card .btn-container {
-  margin-bottom: 64px;
+  margin-bottom: 62px;
   padding: 0 24px;
 }
 #page-pricing .flex .card .terms {
