@@ -847,14 +847,8 @@ header input {
 }
 #page-app .flex .app-description {
   position: relative;
-  top: -18px;
-  width: 600px;
   order: 2;
   margin: 0 auto;
-}
-#page-app .flex .app-description p {
-  font-size: 15px;
-  letter-spacing: -0.19px;
 }
 #page-app .flex .app-description p + p {
   margin-top: 17px;
@@ -890,7 +884,13 @@ header input {
     margin-bottom: 0;
   }
   #page-app .flex .app-description {
+    width: 600px;
+    top: -18px;
     margin-top: 63px;
+  }
+  #page-app .flex p {
+    font-size: 15px;
+    letter-spacing: -0.19px;
   }
   #page-app .flex img {
     margin: 47px 123px 2px 0;
