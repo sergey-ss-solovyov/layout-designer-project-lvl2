@@ -363,7 +363,7 @@ header input {
 }
 .banner.home-banner {
   padding: 248px 20px 200px 20px;
-  background-image: url("../../src/images/banner.png");
+  background-image: url("../images/banner.png");
 }
 .banner.home-banner h1,
 .banner.home-banner h2,
@@ -399,7 +399,7 @@ header input {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background-image: url("../../src/images/Morten Harket.png");
+  background-image: url("../images/Morten Harket.png");
 }
 .banner.art-banner #page-description {
   padding: 225px 0;
@@ -444,7 +444,7 @@ header input {
 }
 @media (min-width: 650px) {
   .banner.home-banner {
-    padding: 200px 0;
+    padding: 201px 0;
   }
   .banner.home-banner .grid {
     display: grid;
@@ -488,7 +488,7 @@ header input {
   }
 }
 #page-pricing {
-  padding: 102px 0 0 0;
+  padding: 104px 20px 0 20px;
 }
 #page-pricing h2 {
   margin-bottom: 47px;

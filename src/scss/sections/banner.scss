@@ -16,7 +16,7 @@
 
   &.home-banner {
     padding: 248px 20px 200px 20px;
-    background-image: url("../../src/images/banner.png");
+    background-image: url("../images/banner.png");
 
     h1,
     h2,
@@ -59,7 +59,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    background-image: url("../../src/images/Morten Harket.png");
+    background-image: url("../images/Morten Harket.png");
 
     #page-description {
       padding: 225px 0;
@@ -126,7 +126,7 @@
 
 @media (min-width: 650px) {
   .banner.home-banner {
-    padding: 200px 0;
+    padding: 201px 0;
 
     .grid {
       display: grid;
