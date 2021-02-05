@@ -557,6 +557,11 @@ header input {
     font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
+@media (min-width: 1024px) {
+  #page-pricing .flex {
+    justify-content: space-between;
+  }
+}
 @media (min-width: 1440px) {
   #page-pricing h2 {
     margin-bottom: 48px;
@@ -797,7 +802,8 @@ header input {
     font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   #page-news .grid .singer img {
-    max-width: 575px;
+    max-width: 100%;
+    width: 575px;
   }
   #page-news .grid .singer .news-card {
     max-width: 575px;
