@@ -541,14 +541,17 @@ header input {
 #page-pricing .flex .card-1 {
   max-width: 372px;
   background-image: url(../images/subscribe_1.png);
+  background-origin: content-box;
 }
 #page-pricing .flex .card-2 {
   max-width: 372px;
   background-image: url(../images/subscribe_2.png);
+  background-origin: content-box;
 }
 #page-pricing .flex .card-3 {
   max-width: 372px;
   background-image: url(../images/subscribe_3.png);
+  background-origin: content-box;
 }
 
 @media (min-width: 843px) {
@@ -565,7 +568,7 @@ header input {
     font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
   }
   #page-pricing .flex .card .terms {
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     padding: 0 20px;
     letter-spacing: -0.3px;
   }
