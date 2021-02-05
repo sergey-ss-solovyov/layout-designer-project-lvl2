@@ -6,6 +6,7 @@
 
   h2 {
     margin-bottom: 48px;
+
     text-align: center;
 
     @include get-h2-mobile-style;
@@ -27,13 +28,14 @@
     .singer {
       img {
         display: block;
-        margin: auto;
-        // width: 100%;
         width: 374px;
+
+        margin: auto;
       }
 
       .news-card {
         width: 374px;
+
         margin: 0 auto;
 
         .description {
@@ -61,8 +63,9 @@
           margin-bottom: 47.5px;
 
           .music-box-avatar {
-            height: 19px;
             width: 19px;
+            height: 19px;
+
             margin: 0;
           }
 

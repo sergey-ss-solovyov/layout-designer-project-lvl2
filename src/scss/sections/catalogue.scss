@@ -32,6 +32,7 @@
   .catalogue {
     .grid {
       grid-template-columns: repeat(2, 1fr);
+
       margin-right: 50px;
     }
   }
@@ -40,8 +41,9 @@
 @media (min-width: 590px) {
   .catalogue {
     .grid {
-      grid-template-columns: repeat(2, 250px);
       grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 250px);
+
       margin-right: 0;
     }
   }

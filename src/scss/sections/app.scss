@@ -3,10 +3,12 @@
 
 #page-app {
   max-width: 374px;
+
   padding: 100px 20px 0 20px;
 
   h2 {
     margin-bottom: 48px;
+
     text-align: center;
 
     @include get-h2-mobile-style;
@@ -17,12 +19,14 @@
 
     img {
       max-width: 333px;
+
       margin: 0 auto 16px auto;
     }
 
     .app-description {
       position: relative;
       order: 2;
+
       margin: 0 auto;
 
       p + p {
@@ -46,17 +50,20 @@
 
     .flex {
       flex-direction: row;
+
       max-width: 100%;
 
       .app-description {
         top: 0;
         order: 1;
+
         margin: 0 144px 0 0;
       }
 
       img {
-        order: 2;
         max-width: 333px;
+        order: 2;
+
         margin-bottom: 0;
       }
     }
@@ -74,6 +81,7 @@
       .app-description {
         width: 600px;
         top: -18px;
+
         margin-top: 63px;
       }
 

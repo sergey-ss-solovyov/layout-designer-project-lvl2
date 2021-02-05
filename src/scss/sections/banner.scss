@@ -10,18 +10,20 @@
   }
 
   &.bg-banner {
-    background-size: cover;
     background-position-x: center;
+    background-size: cover;
   }
 
   &.home-banner {
     padding: 248px 20px 200px 20px;
+
     background-image: url("../images/banner.png");
 
     h1,
     h2,
     p {
       margin: 0;
+
       text-align: center;
     }
 
@@ -39,10 +41,13 @@
         width: 100%;
         margin: 0 auto;
         padding-left: 22px;
+
+        color: get-color();
+
         background-color: transparent;
+
         border: solid 2px get-color("dark-gray");
         border-radius: 3px;
-        color: get-color();
 
         &::-moz-placeholder {
           color: get-color();
@@ -58,12 +63,15 @@
   &.art-banner {
     display: flex;
     justify-content: center;
+
     margin: 0 auto;
+
     background-image: url("../images/Morten Harket.png");
 
     #page-description {
-      padding: 225px 20px;
       width: 1200px;
+
+      padding: 225px 20px;
     }
 
     h1 {
@@ -81,6 +89,7 @@
         img {
           vertical-align: middle;
           margin-left: 31px;
+
           filter: invert(1);
         }
 
@@ -130,18 +139,18 @@
 
     .grid {
       display: grid;
-      grid-template-columns: auto repeat(2, 273px) auto;
       grid-template-rows: 50px 57px;
+      grid-template-columns: auto repeat(2, 273px) auto;
       gap: 24px;
 
       .ctrl-1 {
-        grid-column: 2 / span 1;
         grid-row: 1 / 1;
+        grid-column: 2 / span 1;
       }
 
       .ctrl-2 {
-        grid-column: 3 / span 1;
         grid-row: 1 / 1;
+        grid-column: 3 / span 1;
       }
     }
   }
