@@ -105,8 +105,8 @@
     .flex {
       
       .card {
-        background-size: 102%;
-        margin-bottom: 40px; // 47px
+        background-size: 100%; // 101 -> 102 -> 100
+        margin-bottom: 41px; // 47px -> 40px -> 41px
 
         h3 {
           margin: 21px 0 178px 0;
