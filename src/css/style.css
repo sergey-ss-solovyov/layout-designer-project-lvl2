@@ -25,6 +25,7 @@ button {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -88,6 +89,7 @@ li {
 }
 .btn {
   text-align: center;
+  cursor: pointer;
 }
 
 .access-btn {
