@@ -18,23 +18,24 @@
     gap: 64px;
 
     .singer-1 {
-      grid-area: "singer-1";
+      grid-area: singer-1;
     }
 
     .singer-2 {
-      grid-area: "singer-2";
+      grid-area: singer-2;
     }
 
     .singer {
       img {
         display: block;
-        width: 374px;
+        width: 100%;
+        max-width: 374px;
 
         margin: auto;
       }
 
       .news-card {
-        width: 374px;
+        max-width: 374px;
 
         margin: 0 auto;
 
@@ -89,11 +90,11 @@
     .grid {
       .singer {
         img {
-          width: 575px;
+          max-width: 575px;
         }
 
         .news-card {
-          width: 575px;
+          max-width: 575px;
 
           .album-title {
             @include get-font-styles(30px);
@@ -104,7 +105,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #page-news {
     .grid {
       display: grid;
@@ -115,7 +116,7 @@
         display: flex;
 
         &.singer-1 {
-          grid-area: "singer-1";
+          grid-area: singer-1;
 
           .news-card {
             margin-left: 50px;
@@ -127,7 +128,7 @@
         }
 
         &.singer-2 {
-          grid-area: "singer-2";
+          grid-area: singer-2;
 
           .news-card {
             margin-right: 50px;
