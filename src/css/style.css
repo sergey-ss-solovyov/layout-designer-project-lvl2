@@ -564,25 +564,20 @@ header input {
 }
 @media (min-width: 1440px) {
   #page-pricing .flex .card {
-    background-size: 101%;
-    margin-bottom: 47px;
+    background-size: 102%;
+    margin-bottom: 40px;
   }
   #page-pricing .flex .card h3 {
     margin: 21px 0 178px 0;
     font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
   }
-  #page-pricing .flex .card-1 {
-    max-width: 368px;
-  }
-  #page-pricing .flex .card-2 {
-    max-width: 368px;
-  }
-  #page-pricing .flex .card-3 {
+  #page-pricing .flex .card-1,
+#page-pricing .flex .card-2,
+#page-pricing .flex .card-3 {
     max-width: 368px;
   }
   #page-pricing .common-terms {
     max-width: 1200px;
-    margin-top: -7px;
     margin-right: auto;
     margin-left: auto;
   }
