@@ -564,8 +564,9 @@ header input {
 }
 @media (min-width: 1440px) {
   #page-pricing .flex .card {
-    background-size: 102%;
-    margin-bottom: 40px;
+    background-position: center;
+    background-size: 101%;
+    margin-bottom: 42px;
   }
   #page-pricing .flex .card h3 {
     margin: 21px 0 178px 0;
