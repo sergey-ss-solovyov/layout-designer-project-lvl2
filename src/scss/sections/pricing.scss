@@ -11,18 +11,26 @@
   }
 
   .common-terms {
-    margin-top: -8px;
+    // margin-top: -8px;
     text-align: center;
   }
 
   .flex {
+    justify-content: space-evenly;
+
     .card {
-      min-width: 210px;
-      margin: 0 0 48px 0;
+      // width: 100%; 
+      // min-width: 210px;
+      width: 100%;
+      max-width: 374px;
+      margin-bottom: 51px;
       text-align: center;
-      background-size: cover;
+      // background-size: cover;
       // border: 1px solid get-color('black');
-      border-radius: 15px;
+      // border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border-radius: 1rem;
 
       h3 {
         margin: 16px 0 184px 0;
@@ -54,29 +62,30 @@
       }
 
       .terms {
-        margin-bottom: 63px;
-        padding: 0 22px;
+        margin-bottom: 64px;
+        padding: 0 26px;
 
         @include get-font-styles(12.8px);
       }
     }
 
     .card-1 {
-      max-width: 374px;
+      // max-width: 374px;
       background-image: url(../images/subscribe_1.png);
-      background-origin: border-box;
+      // background-origin: border-box;
     }
 
     .card-2 {
-      max-width: 374px;
+      // max-width: 374px;
       background-image: url(../images/subscribe_2.png);
-      background-origin: border-box;
+      // background-origin: border-box;
     }
 
     .card-3 {
-      max-width: 374px;
+      // max-width: 374px;
+      margin-bottom: 39px;
       background-image: url(../images/subscribe_3.png);
-      background-origin: border-box;
+      // background-origin: border-box;
     }
   }
 }
@@ -89,12 +98,23 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #page-pricing {
     .flex {
       justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-pricing {
+    .flex {
+      // justify-content: space-between;
       
       .card {
+        background-size: 101%;
+        margin-bottom: 47px;
+
         h3 {
           margin: 21px 0 178px 0;
 
@@ -102,21 +122,21 @@
         }
 
         .terms {
-          margin-bottom: 62px;
-          padding: 0 20px;
-          letter-spacing: -0.3px;
+          // margin-bottom: 62px;
+          // padding: 0 25px;
+          // letter-spacing: -0.3px;
         }
       }
       .card-1 {
-        max-width: 367px;
+        max-width: 368px;
       }
 
       .card-2 {
-        max-width: 367px;
+        max-width: 368px;
       }
 
       .card-3 {
-        max-width: 367px;
+        max-width: 368px;
       }
     }
 

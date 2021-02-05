@@ -501,15 +501,19 @@ header input {
   font: normal 700 18px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .common-terms {
-  margin-top: -8px;
   text-align: center;
 }
+#page-pricing .flex {
+  justify-content: space-evenly;
+}
 #page-pricing .flex .card {
-  min-width: 210px;
-  margin: 0 0 48px 0;
+  width: 100%;
+  max-width: 374px;
+  margin-bottom: 51px;
   text-align: center;
-  background-size: cover;
-  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 1rem;
 }
 #page-pricing .flex .card h3 {
   margin: 16px 0 184px 0;
@@ -533,24 +537,19 @@ header input {
   padding: 0 24px;
 }
 #page-pricing .flex .card .terms {
-  margin-bottom: 63px;
-  padding: 0 22px;
+  margin-bottom: 64px;
+  padding: 0 26px;
   font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .flex .card-1 {
-  max-width: 372px;
   background-image: url(../images/subscribe_1.png);
-  background-origin: border-box;
 }
 #page-pricing .flex .card-2 {
-  max-width: 372px;
   background-image: url(../images/subscribe_2.png);
-  background-origin: border-box;
 }
 #page-pricing .flex .card-3 {
-  max-width: 372px;
+  margin-bottom: 39px;
   background-image: url(../images/subscribe_3.png);
-  background-origin: border-box;
 }
 
 @media (min-width: 843px) {
@@ -558,27 +557,28 @@ header input {
     font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #page-pricing .flex {
     justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  #page-pricing .flex .card {
+    background-size: 101%;
+    margin-bottom: 47px;
   }
   #page-pricing .flex .card h3 {
     margin: 21px 0 178px 0;
     font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
   }
-  #page-pricing .flex .card .terms {
-    margin-bottom: 62px;
-    padding: 0 20px;
-    letter-spacing: -0.3px;
-  }
   #page-pricing .flex .card-1 {
-    max-width: 365px;
+    max-width: 368px;
   }
   #page-pricing .flex .card-2 {
-    max-width: 365px;
+    max-width: 368px;
   }
   #page-pricing .flex .card-3 {
-    max-width: 365px;
+    max-width: 368px;
   }
   #page-pricing .common-terms {
     max-width: 1200px;
