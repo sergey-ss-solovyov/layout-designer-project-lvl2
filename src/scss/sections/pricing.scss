@@ -11,7 +11,6 @@
   }
 
   .common-terms {
-    // margin-top: -8px;
     text-align: center;
   }
 
@@ -19,15 +18,10 @@
     justify-content: space-evenly;
 
     .card {
-      // width: 100%; 
-      // min-width: 210px;
       width: 100%;
       max-width: 374px;
       margin-bottom: 51px;
       text-align: center;
-      // background-size: cover;
-      // border: 1px solid get-color('black');
-      // border-radius: 15px;
       background-repeat: no-repeat;
       background-size: 100%;
       border-radius: 1rem;
@@ -102,10 +96,14 @@
 
 @media (min-width: 1440px) {
   #page-pricing {
+    h2 {
+      margin-bottom: 48px;
+    }
+
     .flex {
       
       .card {
-        background-position: center;
+        // background-position: center;
         background-size: 101%; // 101 -> 102 -> 100
         margin-bottom: 42px; // 47px -> 40px -> 41px -> 42
 
