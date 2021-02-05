@@ -509,7 +509,6 @@ header input {
   margin: 0 0 48px 0;
   text-align: center;
   background-size: cover;
-  border: 1px solid #08020d;
   border-radius: 15px;
 }
 #page-pricing .flex .card h3 {
@@ -534,24 +533,24 @@ header input {
   padding: 0 24px;
 }
 #page-pricing .flex .card .terms {
-  margin-bottom: 64px;
+  margin-bottom: 63px;
   padding: 0 22px;
   font: normal 400 12.8px/1.5 "Roboto", "sans-serif", sans-serif;
 }
 #page-pricing .flex .card-1 {
   max-width: 372px;
   background-image: url(../images/subscribe_1.png);
-  background-origin: content-box;
+  background-origin: border-box;
 }
 #page-pricing .flex .card-2 {
   max-width: 372px;
   background-image: url(../images/subscribe_2.png);
-  background-origin: content-box;
+  background-origin: border-box;
 }
 #page-pricing .flex .card-3 {
   max-width: 372px;
   background-image: url(../images/subscribe_3.png);
-  background-origin: content-box;
+  background-origin: border-box;
 }
 
 @media (min-width: 843px) {
@@ -568,7 +567,7 @@ header input {
     font: normal 400 24px/1.875 "Roboto", "sans-serif", sans-serif;
   }
   #page-pricing .flex .card .terms {
-    margin-bottom: 61px;
+    margin-bottom: 62px;
     padding: 0 20px;
     letter-spacing: -0.3px;
   }

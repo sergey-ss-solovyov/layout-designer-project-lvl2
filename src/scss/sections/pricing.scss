@@ -11,18 +11,17 @@
   }
 
   .common-terms {
-    margin-top: -8px; // -10px
+    margin-top: -8px;
     text-align: center;
   }
 
   .flex {
     .card {
-      // width: 100%;
       min-width: 210px;
       margin: 0 0 48px 0;
       text-align: center;
       background-size: cover;
-      border: 1px solid get-color('black');
+      // border: 1px solid get-color('black');
       border-radius: 15px;
 
       h3 {
@@ -55,7 +54,7 @@
       }
 
       .terms {
-        margin-bottom: 64px;
+        margin-bottom: 63px;
         padding: 0 22px;
 
         @include get-font-styles(12.8px);
@@ -63,21 +62,21 @@
     }
 
     .card-1 {
-      max-width: 372px;
+      max-width: 374px;
       background-image: url(../images/subscribe_1.png);
-      background-origin: content-box;
+      background-origin: border-box;
     }
 
     .card-2 {
-      max-width: 372px;
+      max-width: 374px;
       background-image: url(../images/subscribe_2.png);
-      background-origin: content-box;
+      background-origin: border-box;
     }
 
     .card-3 {
-      max-width: 372px;
+      max-width: 374px;
       background-image: url(../images/subscribe_3.png);
-      background-origin: content-box;
+      background-origin: border-box;
     }
   }
 }
@@ -103,21 +102,21 @@
         }
 
         .terms {
-          margin-bottom: 61px;
+          margin-bottom: 62px;
           padding: 0 20px;
           letter-spacing: -0.3px;
         }
       }
       .card-1 {
-        max-width: 365px;
+        max-width: 367px;
       }
 
       .card-2 {
-        max-width: 365px;
+        max-width: 367px;
       }
 
       .card-3 {
-        max-width: 365px;
+        max-width: 367px;
       }
     }
 
