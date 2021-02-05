@@ -8,7 +8,7 @@ lint:
 	npx stylelint ./src/scss/layouts/*.scss
 	npx stylelint ./src/scss/sections/*.scss
 	npx stylelint ./src/scss/main.scss
-	npx htmlhint ./src/html/*.html
+	npx htmlhint ./src/*.html
 
 deploy:
 	npx surge ./src/

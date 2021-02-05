@@ -25,6 +25,7 @@
 
     .app-description {
       position: relative;
+
       order: 2;
 
       margin: 0 auto;
@@ -55,14 +56,16 @@
 
       .app-description {
         top: 0;
+
         order: 1;
 
         margin: 0 144px 0 0;
       }
 
       img {
-        max-width: 333px;
         order: 2;
+
+        max-width: 333px;
 
         margin-bottom: 0;
       }
@@ -72,15 +75,15 @@
 
 @media (min-width: 1440px) {
   #page-app {
-
     h2 {
       margin-bottom: 0;
     }
 
     .flex {
       .app-description {
-        width: 600px;
         top: -18px;
+
+        width: 600px;
 
         margin-top: 63px;
       }
