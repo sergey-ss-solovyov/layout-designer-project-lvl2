@@ -804,8 +804,8 @@ header input {
     font: normal 700 38px/1.5 "Roboto", "sans-serif", sans-serif;
   }
   #page-news .grid .singer img {
-    max-width: 100%;
     width: 575px;
+    max-width: 100%;
   }
   #page-news .grid .singer .news-card {
     max-width: 575px;
